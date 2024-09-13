@@ -1,0 +1,4 @@
+RQ2_bot_evluation_process/data/data_repo_name.csv filter=lfs diff=lfs merge=lfs -text
+RQ2_bot_evluation_process/data/repo_actor_count_results.csv filter=lfs diff=lfs merge=lfs -text
+RQ2_bot_evluation_process/data/bot_id_to_repo.csv filter=lfs diff=lfs merge=lfs -text
+RQ2_bot_evluation_process/data/comment_data_dissimilar_analysis/top100_IssueCommentEvent.csv filter=lfs diff=lfs merge=lfs -text
