@@ -1,0 +1,53 @@
+title
+An exploratory study of reactions to bot comments on GitHub
+RABBIT: A tool for identifying bot accounts based on their recent GitHub event history
+On the adoption of a TODO bot on GitHub: a preliminary study
+Bot detection in GitHub repositories
+GFI-bot: automated good first issue recommendation on GitHub
+Bot or not? Detecting bots in GitHub pull request activity based on comment similarity
+On the accuracy of bot detection techniques
+Use Bots to Improve GitHub Pull-Request Feedback
+CORMS: a GitHub and Gerrit based hybrid code reviewer recommendation approach for modern code review
+Understanding the Helpfulness of Stale Bot for Pull-Based Development: An Empirical Study of 20 Large Open-Source Projects
+An Exploratory Study of Bot Commits
+Between JIRA and GitHub: ASFBot and its influence on human comments in issue trackers
+GitHub-OSS fixit
+FixMe: a GitHub bot for detecting and monitoring on-hold self-admitted technical debt
+How to design a program repair bot? insights from the repairnator project
+Exploring ChatGPT for Toxicity Detection in GitHub
+How do Machine Learning Projects use Continuous Integration Practices? An Empirical Study on GitHub Actions
+A Tool for the Definition and Deployment of Platform-Independent Bots on Open Source Projects
+There’s no Such Thing as a Free Lunch: Lessons Learned from Exploring the Overhead Introduced by the Greenkeeper Dependency Bot in Npm
+BotHunter: an approach to detect software bots in GitHub
+Should I stale or should I close? an analysis of a bot that closes abandoned issues and pull requests
+Enhancing developers’ support on pull requests activities with software bots
+RefBot: intelligent software refactoring bot
+Leveraging Software Bots to Enhance Developers' Collaboration in Online Programming Communities
+"Bots for pull requests: the good, the bad, and the promising"
+Don't Disturb Me: Challenges of Interacting with Software Bots on Open Source Software Projects
+The Power of Bots: Characterizing and Understanding Bots in OSS Projects
+The Inconvenient Side of Software Bots on Pull Requests
+Software bots in software engineering: benefits and challenges
+Detecting and Characterizing Bots that Commit Code
+Defining and classifying software bots: a faceted taxonomy
+Summary of the Third International Workshop on Bots in Software Engineering (BotSE 2021)
+"Expecting the unexpected: distilling bot development, challenges, and motivations"
+JITBot: an explainable just-in-time defect prediction bot
+Sorry to Bother You Again: Developer Recommendation Choice Architectures for Designing Effective Bots
+Classifying issues into custom labels in GitBot
+A unified code review automation for large-scale industry with diverse development environments
+BreakBot: analyzing the impact of breaking changes to assist library evolution
+PyTy: Repairing Static Type Errors in Python
+Measuring and Clustering Heterogeneous Chatbot Designs
+FLOSS FAQ chatbot project reuse: how to allow nonexperts to develop a chatbot
+CVEfixes: automated collection of vulnerabilities and their fixes from open-source software
+WhoDo: automating reviewer suggestions at scale
+Is it Enough to Recommend Tasks to Newcomers? Understanding Mentoring on Good First Issues
+"Bots Don’t Mind Waiting, Do They? Comparing the Interaction With Automatically and Manually Created Pull Requests"
+Suggestion Bot: Analyzing the Impact of Automated Suggested Changes on Code Reviews
+Guidelines for Developing Bots for GitHub
+A ground-truth dataset and classification model for detecting bots in GitHub issue and PR comments
+SAW-BOT: Proposing Fixes for Static Analysis Warnings with GitHub Suggestions
+Conversational Bot for Newcomers Onboarding to Open Source Projects
+Leveraging predictions from multiple repositories to improve bot detection
+Explainable software bot contributions: case study of automated bug fixes
