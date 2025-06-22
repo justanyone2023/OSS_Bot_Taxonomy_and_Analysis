@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Murali, Aniruddhan
+AU  - Sahu, Gaurav
+AU  - Thangarajah, Kishanthan
+AU  - Zimmerman, Brian
+AU  - Rodríguez-Pérez, Gema
+AU  - Nagappan, Meiyappan
+PY  - 2024
+DA  - 2024/01/09
+TI  - Diversity in issue assignment: humans vs bots
+JO  - Empirical Software Engineering
+SP  - 37
+VL  - 29
+IS  - 2
+AB  - Issue assignment process is a common practice in open source projects for managing incoming and existing issues. While traditionally performed by humans, the adoption of software bots for automating this process has become prevalent in recent years. The objective of this paper is to examine the diversity in issue assignments between bots and humans in open source projects, with the aim of understanding how open source communities can foster diversity and inclusivity. To achieve this, we conducted a quantitative analysis on three major open source projects hosted on GitHub, focusing on the most likely racial and ethnic diversity of both human and bot assignors during the issue assignment process. We analyze how issues are assigned by humans and bots, as well as the distribution of issue types among White and Non-White open source collaborators. Additionally, we explore how the diversity in issue assignments evolves over time for human and bot assignors. Our results reveal that both human and bot assignors majorly assign issues to developers of the same most likely race and ethnicity. Notably, we find bots assign more issues to perceived White developers than Non-White developers. In conclusion, our findings suggest that bots display higher levels of bias than humans in most cases, although humans also demonstrate significant bias in certain instances. Thus, open source communities must actively address these potential biases in their GitHub issue assignment process to promote diversity and inclusivity.
+SN  - 1573-7616
+UR  - https://doi.org/10.1007/s10664-023-10424-6
+DO  - 10.1007/s10664-023-10424-6
+ID  - Murali2024
+ER  - 

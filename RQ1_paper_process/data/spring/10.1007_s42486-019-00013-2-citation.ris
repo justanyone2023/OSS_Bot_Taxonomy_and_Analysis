@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Peng, Zhenhui
+AU  - Ma, Xiaojuan
+PY  - 2019
+DA  - 2019/11/01
+TI  - Exploring how software developers work with mention bot in GitHub
+JO  - CCF Transactions on Pervasive Computing and Interaction
+SP  - 190
+EP  - 203
+VL  - 1
+IS  - 3
+AB  - Recently, major software development platforms have started to provide automatic reviewer recommendation (ARR) services for pull requests to improve collaborative coding review process. However, the user experience of ARR is under-investigated. In this paper, we use a two-stage mixed-methods approach to study how software developers perceive and work with the Facebook mention bot, one of the most popular ARR bots in GitHub. Specifically, in Stage I, we conduct archival analysis on projects employing mention bot and a user survey to investigate bot performance. A year later, in Stage II, we revisit these projects and conduct additional surveys and interviews with three user groups: project owners, contributors and reviewers. Results show that developers appreciate mention bot saving their efforts, but are bothered by its unstable setting and unbalanced workload allocation. We conclude with design considerations for improving ARR services.
+SN  - 2524-5228
+UR  - https://doi.org/10.1007/s42486-019-00013-2
+DO  - 10.1007/s42486-019-00013-2
+ID  - Peng2019
+ER  - 

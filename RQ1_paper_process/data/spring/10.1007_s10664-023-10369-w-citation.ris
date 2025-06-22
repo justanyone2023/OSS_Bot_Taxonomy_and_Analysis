@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Wessel, Mairieli
+AU  - Vargovich, Joseph
+AU  - Gerosa, Marco A.
+AU  - Treude, Christoph
+PY  - 2023
+DA  - 2023/09/26
+TI  - GitHub Actions: The Impact on the Pull Request Process
+JO  - Empirical Software Engineering
+SP  - 131
+VL  - 28
+IS  - 6
+AB  - Software projects frequently use automation tools to perform repetitive activities in the distributed software development process. Recently, GitHub introduced GitHub Actions, a feature providing automated workflows for software projects. Understanding and anticipating the effects of adopting such technology is important for planning and management. Our research investigates how projects use GitHub Actions, what the developers discuss about them, and how project activity indicators change after their adoption. Our results indicate that 1,489 out of 5,000 most popular repositories (almost 30% of our sample) adopt GitHub Actions and that developers frequently ask for help implementing them. Our findings also suggest that the adoption of GitHub Actions leads to more rejections of pull requests (PRs), more communication in accepted PRs and less communication in rejected PRs, fewer commits in accepted PRs and more commits in rejected PRs, and more time to accept a PR. We found similar results when segmenting our results by categories of GitHub Actions. We suggest practitioners consider these effects when adopting GitHub Actions on their projects.
+SN  - 1573-7616
+UR  - https://doi.org/10.1007/s10664-023-10369-w
+DO  - 10.1007/s10664-023-10369-w
+ID  - Wessel2023
+ER  - 

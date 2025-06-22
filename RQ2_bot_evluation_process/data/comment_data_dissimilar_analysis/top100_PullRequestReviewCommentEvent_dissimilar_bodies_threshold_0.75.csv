@@ -1,0 +1,2757 @@
+actor_id,type,body
+62695641,PullRequestReviewCommentEvent,Unused import - java.util.concurrent.ConcurrentHashMap.
+9011267,PullRequestReviewCommentEvent,"Until CLI has packages and we can move back to their feeds, yes.
+
+We could also consider just uploading these packages to the dotnetcli blob storage, with names that sort of match the old scheme (replacing -ubuntu with -ubuntu.14.04-x64 ideally to disambiguate between ubuntu versions), if that's preferable (I would need to chat quickly with @piotrpMSFT before doing so, but it might be helpful for them to have them for bootstrapping anyway)."
+26523804,PullRequestReviewCommentEvent,"As discussed, let's stick to `configure_opts` (to align with `configure` step)"
+13025337,PullRequestReviewCommentEvent,"We are not deploying any RabbitMQ instance, just the operator. It doesn't make any sense to deploy a RabbitMQ instance in this case, as there are innumerable configurations. "
+15990849,PullRequestReviewCommentEvent,update.
+15990849,PullRequestReviewCommentEvent,"So, i should let what it was be, no update here?"
+15990849,PullRequestReviewCommentEvent,I have updated to value '<remarks>To be added.</remarks>'
+15990849,PullRequestReviewCommentEvent,formatEle.Value will get value “Describes the common properties that all features have.”
+15990849,PullRequestReviewCommentEvent,will delete it
+1589480,PullRequestReviewCommentEvent,"This is -3. Sorry, we won't accept this. Please consider [creating your own tap](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/How-to-Create-and-Maintain-a-Tap.md#how-to-create-and-maintain-a-tap) instead. Thanks!"
+43581769,PullRequestReviewCommentEvent,"deleteSchedulingV1CollectionPriorityClass isn't currently showing as hit/tested at this time for some reason:
+
+https://apisnoop.cncf.io/conformance-progress/endpoints/1.20.0?filter=untested
+
+![image](https://user-images.githubusercontent.com/43581769/97385960-b5449b00-1937-11eb-9cf1-c7484ca5900f.png)
+"
+43581769,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 30: did not find expected key.
+26720499,PullRequestReviewCommentEvent,This would've been handy when we were writing our server implementation last year. :grinning: 
+38341030,PullRequestReviewCommentEvent,"How about:
+ - `Domain name updates (including IP address change) are reflected within 30 minutes.` OR 
+ - `Domain names and IP address changes are reflected within 30 minutes.`
+"
+28113323,PullRequestReviewCommentEvent,"Ahh, I see. If feature branches are not needed for the enterprise version, then all should be good now (hopefully). Reason it didn't sync with `inventory-enterprise` is because the bot did not have a fork of the repository in which to create a PR from ;)"
+49303554,PullRequestReviewCommentEvent,"whitespace:end of line
+"
+49303554,PullRequestReviewCommentEvent,"whitespace:tabs in line
+"
+49303554,PullRequestReviewCommentEvent,"shellcheck:25: warning: Did you forget to close this double quoted string? [SC1078]
+"
+10605095,PullRequestReviewCommentEvent,I was looking at secrets not tokens. That was easier than I expected.
+32282838,PullRequestReviewCommentEvent,"To be honest not too sure why you would need  more than that(in a recent go version 1.8+):
+
+```
+go get github.com/jetstack/vault-unsealer
+make -C $(go env GOPATH)/src/github.com/jetstack/vault-unsealer build
+```
+"
+32282838,PullRequestReviewCommentEvent,This should be a `puppetManifestRef`
+32282838,PullRequestReviewCommentEvent,"I think similar to how jobs clear a pod associated with them we should only keep like the last 15 `WingJobs`. (Ideally that is configurable by a variable in the Instance type)
+"
+32282838,PullRequestReviewCommentEvent,This needs to be as long as the headline
+32282838,PullRequestReviewCommentEvent,Can we run that as User=Nobody
+32282838,PullRequestReviewCommentEvent,remove me
+32282838,PullRequestReviewCommentEvent,update that or remove it
+32282838,PullRequestReviewCommentEvent,"Golint comments: package comment should be of the form ""Package hooks ..."". [More info](https://golang.org/wiki/CodeReviewComments#package-comments). <!-- golint -->"
+11063859,PullRequestReviewCommentEvent,"There's a non-zero chance that you don't know what you're doing.
+
+This serves to block accidental merges until Undo over there has a chance to test this more."
+26360365,PullRequestReviewCommentEvent,"**checkpatch WARNING (NEW_TYPEDEFS):**
+
+ do not add new typedefs"
+26360365,PullRequestReviewCommentEvent,"**checkpatch WARNING (PREFER_KERNEL_TYPES):**
+
+ Prefer kernel type 'u64_t' over 'uint64_t'"
+26360365,PullRequestReviewCommentEvent,"**CHECKPATCH ERROR:**
+
+ that open brace { should be on the previous line"
+2222479,PullRequestReviewCommentEvent,License is now  EPL-2.0
+2222479,PullRequestReviewCommentEvent,Goodwork has a homepage at https://usegood.work/
+2222479,PullRequestReviewCommentEvent,Description should be 250 characters or less.
+2222479,PullRequestReviewCommentEvent,Change demo link to https://lbry.tv
+2222479,PullRequestReviewCommentEvent,Wouldn't this be a better fit in the Password Managers category?
+2222479,PullRequestReviewCommentEvent,The files that were generated in CI are now in ` .github/workflows/docker`.  The `Containerfile` is now  `Dockerfile.ci`. I also updated the main `Dockerfile` to more closely match `Dockerfile.ci`. The workflow is using pregenerated `etc/passwd` and `etc/group` files to prevent the use of qemu when running buildx.
+2222479,PullRequestReviewCommentEvent,ZPL-1.2 needs to be added to the list of licenses.
+2222479,PullRequestReviewCommentEvent,https://github.com/Mission-Kontrol/MissionKontrol-rails lists license as GPL-3.0
+2222479,PullRequestReviewCommentEvent,Remove `([Source Code](https://github.com/dutchcoders/transfer.sh))` as it is a duplicate link.
+2222479,PullRequestReviewCommentEvent,Should be SSPL-1.0
+2222479,PullRequestReviewCommentEvent,"Connection times out for me.
+
+How about: https://spdx.org/licenses/CECILL-B.html"
+2222479,PullRequestReviewCommentEvent,"- Capitalize Self-hosted
+- add full stop(.) after imap
+- Demo site should be https://bhadoomail.com/
+- Remove Source code it is the same as the site url"
+2222479,PullRequestReviewCommentEvent,Missing closing _
+2222479,PullRequestReviewCommentEvent,"@nodiscc what are your thoughts on this:
+The COPYING file is BSD-3-Clause and the LICENSE file is GPL-3 "
+2222479,PullRequestReviewCommentEvent,fixed
+2222479,PullRequestReviewCommentEvent,Commented line removed.
+2222479,PullRequestReviewCommentEvent,Missing language
+2222479,PullRequestReviewCommentEvent,Please change \[Source\] to \[Source Code\]
+2222479,PullRequestReviewCommentEvent,Remove one of the uMap entries.
+2222479,PullRequestReviewCommentEvent,thanks @enricostano 
+2222479,PullRequestReviewCommentEvent,Change Python/Django/Angularjs to Python
+44874361,PullRequestReviewCommentEvent,Coding style error
+43188587,PullRequestReviewCommentEvent,no-unused-vars: 'showsHorizontalScrollIndic' is assigned a value but never used.
+43188587,PullRequestReviewCommentEvent,prettier/prettier: Delete `··`
+43188587,PullRequestReviewCommentEvent,"dot-notation: [""_internalInstanceHandle""] is better written in dot notation."
+43188587,PullRequestReviewCommentEvent,"`google-java-format` suggested changes:
+```diff
+@@ -171,4 +173,14 @@
+-      map.putArray(""capabilities"", convertBitsToStringArray(capabilities, (bit) -> accessibilityServiceInfo.capabilityToString(bit)));
+-      map.putArray(""eventTypes"", convertBitsToStringArray(eventTypes, (bit) -> AccessibilityEvent.eventTypeToString(bit)));
+-      map.putArray(""feedbackType"", convertBitsToStringArray(feedbackType, (bit) -> accessibilityServiceInfo.feedbackTypeToString(bit)));
+-      map.putArray(""flags"", convertBitsToStringArray(flags, (bit) -> accessibilityServiceInfo.flagToString(bit)));
++      map.putArray(
++          ""capabilities"",
++          convertBitsToStringArray(
++              capabilities, (bit) -> accessibilityServiceInfo.capabilityToString(bit)));
++      map.putArray(
++          ""eventTypes"",
++          convertBitsToStringArray(eventTypes, (bit) -> AccessibilityEvent.eventTypeToString(bit)));
++      map.putArray(
++          ""feedbackType"",
++          convertBitsToStringArray(
++              feedbackType, (bit) -> accessibilityServiceInfo.feedbackTypeToString(bit)));
++      map.putArray(
++          ""flags"",
++          convertBitsToStringArray(flags, (bit) -> accessibilityServiceInfo.flagToString(bit)));
+```
+"
+43188587,PullRequestReviewCommentEvent,comma-dangle: Missing trailing comma.
+43188587,PullRequestReviewCommentEvent,"`google-java-format` suggested changes:
+```diff
+@@ -191 +191,2 @@
+-    Uri invertColorsUri = Settings.Secure.getUriFor(Settings.Secure.ACCESSIBILITY_DISPLAY_INVERSION_ENABLED);
++    Uri invertColorsUri =
++        Settings.Secure.getUriFor(Settings.Secure.ACCESSIBILITY_DISPLAY_INVERSION_ENABLED);
+```
+"
+43188587,PullRequestReviewCommentEvent,no-alert: Unexpected alert.
+43188587,PullRequestReviewCommentEvent,jest/no-disabled-tests: Skipped test
+49695357,PullRequestReviewCommentEvent,Sounds good!
+25311884,PullRequestReviewCommentEvent,No approvers defined in this root directory OWNERS file.
+823946,PullRequestReviewCommentEvent,Nice change
+823946,PullRequestReviewCommentEvent,"![Code Smell](https://sonarsource.github.io/sonar-github/code_smell.png 'Code Smell') Code Smell: ')' is not preceded with whitespace. ([external_checkstyle:whitespace.ParenPadCheck](http://svpxbldcn7snr1.pentaho.net:9000/coding_rules#rule_key=external_checkstyle%3Awhitespace.ParenPadCheck))
+
+[See it in SonarQube](http://svpxbldcn7snr1.pentaho.net:9000/project/issues?id=org.pentaho%3Acommons-xul&pullRequest=160&issues=AWjiXPHasnWgRSmwyo9U&open=AWjiXPHasnWgRSmwyo9U)
+
+[ISSUE_KEY]: AWjiXPHasnWgRSmwyo9U"
+13572711,PullRequestReviewCommentEvent,"ERROR: browserify => Browserify
+[Contributing Guide](https://github.com/jser/jser.github.io/blob/develop/CONTRIBUTING.md)"
+13572711,PullRequestReviewCommentEvent,"ERROR: 一文に二回以上利用されている助詞 ""て"" がみつかりました。 (no-doubled-joshi)"
+13572711,PullRequestReviewCommentEvent,ERROR: %を => ％を (spellcheck-tech-word)
+48335577,PullRequestReviewCommentEvent,Cannot parse file: error unmarshaling JSON: json: cannot unmarshal string into Go value of type repoowners.FullConfig.
+41898282,PullRequestReviewCommentEvent,"**[cpplint]** <sub>reported by [reviewdog](https://github.com/reviewdog/reviewdog) :dog:</sub>
+ Do not indent within a namespace  [runtime/indentation_namespace] [4]"
+41898282,PullRequestReviewCommentEvent,'useCallback' is defined but never used.
+41898282,PullRequestReviewCommentEvent,Layout/ExtraSpacing: Unnecessary spacing detected.
+41898282,PullRequestReviewCommentEvent,Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+41898282,PullRequestReviewCommentEvent,Metrics/CyclomaticComplexity: Cyclomatic complexity for cookie_domain is too high. [8/7]
+41898282,PullRequestReviewCommentEvent,"
+<!--
+  1 failure:  The changelog ent...
+  0 warning: 
+  
+  
+  DangerID: danger-id-Danger;
+  File: CHANGELOG.md;
+  Line: 7;
+-->
+- :no_entry_sign: The changelog entry seems to be part of an already released section `## 6.12.0`.
+      Consider moving the entry to the `## Unreleased` section, please.
+
+
+
+  "
+41898282,PullRequestReviewCommentEvent,E712: comparison to False should be 'if cond is False:' or 'if not cond:'  <!-- Automatically posted by Lintly -->
+41898282,PullRequestReviewCommentEvent,E126: continuation line over-indented for hanging indent  <!-- Automatically posted by Lintly -->
+41898282,PullRequestReviewCommentEvent,"warning: variable 'a1' is not initialized [cppcoreguidelines-init-variables]
+```cpp
+			BYTE r1, g1, b1, a1;
+                    ^
+```
+this fix will not be applied because it overlaps with another fix"
+43080478,PullRequestReviewCommentEvent,Arbitrarily seemed reasonable.
+15837671,PullRequestReviewCommentEvent,"**[golint]** <sub>reported by [reviewdog](https://github.com/haya14busa/reviewdog) :dog:</sub>
+comment on exported function NewLog should be of the form ""NewLog ..."""
+8723280,PullRequestReviewCommentEvent,"the docstring of the module says that clone everything is going to be performed ==> is this meant to be commented out?
+currently running the script in an empty directory generates an error about README.md not being found. "
+28699486,PullRequestReviewCommentEvent,test comment
+28699486,PullRequestReviewCommentEvent,error
+28699486,PullRequestReviewCommentEvent,Parsing error: Unexpected token )
+14998418,PullRequestReviewCommentEvent,"Je suis d'accord avec le fait qu'il faut que les PRs puissent être développés par plusieurs personnes, mais d'un autre côté je ne sais pas comment le formaliser.. Est-ce que les auteurs peuvent reviewer le taf d'un autre ? Est-ce que ca compte pour une review entière ou une demi review ?
+
+En vrai il y a déjà pas mal de cas particuliers dans ce document et cat met déjà une bonne couche de bureaucratie. Je doute qu'on puisse couvrir tous les cas sans que ca devienne un texte ultra compliqué... Comme Bram, je pense qu'il faut garder à l'esprit que ce sont des guidelines et pas des formalités exactes dans lesquelles il faut rentrer sous peines d'être expulsé... Peut-être que ca vaut le coup de mettre ca dans le document quelque part d'ailleurs (si c'est pas deja le cas ?)"
+12379036,PullRequestReviewCommentEvent,"could you add an entry in the glossary to describe what the Workflow Execution portal is ?
+I think there is already an entry for the workflow automation portal.
+If you decide to replace the existing entry, please make sure that all internal links are not broken."
+12379036,PullRequestReviewCommentEvent,same remark as above
+12379036,PullRequestReviewCommentEvent,Try checking your spelling or use more general terms. => Check your spelling or use more general terms.
+12379036,PullRequestReviewCommentEvent,"Why don't we put a lower priority ? `new NamedThreadFactory(""HSQLDBMonitor"", true, **1**)`"
+12379036,PullRequestReviewCommentEvent,"description=""Headers of the request, .."
+32125183,PullRequestReviewCommentEvent,"![MINOR](https://sonarsource.github.io/sonar-github/severity-minor.png 'Severity: MINOR') Variable 'intentionally_bad_code' is assigned a value that is never used. [![rule](https://sonarsource.github.io/sonar-github/rule.png)](https://sonar.soramitsu.co.jp/coding_rules#rule_key=cppcheck%3AunreadVariable)
+"
+5184438,PullRequestReviewCommentEvent,"```suggestion
+- [ ] UI changes improve or maintain accessibility for keyboard navigation, screenreader compatibility, and WCAG color contrast guidelines
+```"
+854222,PullRequestReviewCommentEvent,Yup! I am bumping this to 0.0.3 now that that riot release is out.
+854222,PullRequestReviewCommentEvent,Depends on #24835 
+854222,PullRequestReviewCommentEvent,Probably should just use `visible` here.
+854222,PullRequestReviewCommentEvent,Love this! ✨ 
+854222,PullRequestReviewCommentEvent,"This feels like tying a few things together: batching the future creation, executing the batches one after another, and collecting the results.
+
+I'd have expected something like:
+
+```reason
+
+/* this is the part where I prepare my data for the concurrent execution */
+module type List = {
+  /* take a list of 'a, and an int for how many to put in each bucket */
+  let chunks_of: (int, list('a)) => list(list('a));
+};
+
+let futures = [1, 2, 3, 4] |. List.map(x => () => Future.value(x)); /* this could also be lazy futures */
+let maxConcurrency = 2;
+let chunks: list(list(unit => Future.t(int)) = List.chunks_of(maxConcurrency, futures);
+/* [ [() => Future(1), () => Future(2)], [() => Future(3), () => Future(4)] ] */
+
+/* this is the part where I build up the computation */
+module type Future = {
+  let all: (list(t('a)), list('a) => 'b); /* from https://github.com/RationalJS/future/issues/16 */
+};
+
+let sequence: list(list(unit => Future.t('a))) => Future.t(list(list('a)) = chunks => {
+  let rec consumer = (cs, acc) => {
+    switch (cs) {
+    | [] => Future.value(acc);
+    | [h, ...t] => {
+        /* initialize all futures in this chunk: this would be more elegant using Lazy/Force */
+       Future.all(List.map(x => x(), h))
+       |. Future.flatMap(results => consumer(t, [results, ...acc])))
+      }
+    }
+  };
+  consumer(chunks, []);
+};
+
+/* this is the part where you consume it */
+later_values.get( values => Js.log(values) );
+```
+
+Of course this is just a sketch but it's a bit more elegant, it (from what I can see) won't throw any exceptions anywhere, it can still be optimized with mutable cursors and good ol' `while` loops if the performance needs it.
+
+Just a thought! Good work @dvisztempacct on pushing for concurrency idioms in the library 🙌 "
+854222,PullRequestReviewCommentEvent,@scull7 essentially this bit -> https://github.com/jonlaing/rationale/blob/master/src/Monad.re#L48-L54
+854222,PullRequestReviewCommentEvent,"**suggestion**. prefer `match` instead of folding:
+
+```suggestion
+      let status = match main () with
+        | Ok code -> code
+        | Error reason -> on_error reason
+      in
+```"
+854222,PullRequestReviewCommentEvent,Love this bits of trivia <3 but I'd put them all the way at the _end_ of the tutorial. Almost an appendix for those that are interested in deepening the context in which polyvars where created.
+854222,PullRequestReviewCommentEvent,"This looks good, it was likely an oversight!"
+854222,PullRequestReviewCommentEvent,**todo**. should remove this.
+854222,PullRequestReviewCommentEvent,Done 🆗 
+854222,PullRequestReviewCommentEvent,Remove these.
+854222,PullRequestReviewCommentEvent,Move to next PR.
+854222,PullRequestReviewCommentEvent,"@mabiede i still create an invitation here, but in the system itself is technically not needed. As long as there's an assignment (created in the immediate next let) this will work.
+
+Same for [line 287](https://github.com/uzh/pool/pull/267/files#diff-12fd6fdcb7f5643497a302117d8a81dc2fef08db84d3e6fce99e7d9fa64bf973R287)"
+854222,PullRequestReviewCommentEvent,Do we still need this error?
+854222,PullRequestReviewCommentEvent,**question**. We're running `0c777...` on all architectures in CI at the moment. What's different in this new hash?
+854222,PullRequestReviewCommentEvent,Remove new line.
+854222,PullRequestReviewCommentEvent,Including a dummy test would be good here 👌🏼 
+854222,PullRequestReviewCommentEvent,"Oh, my bad, yes `Erlang.ml` sounds good! 🙌🏽 "
+854222,PullRequestReviewCommentEvent,haha poor nickelback
+62555040,PullRequestReviewCommentEvent,`ctx` is unused in insertLoginUserToPasswd
+62555040,PullRequestReviewCommentEvent,"exported const OperatorEqual should have comment (or a comment on this block) or be unexported
+
+https://golang.org/wiki/CodeReviewComments#doc-comments"
+62555040,PullRequestReviewCommentEvent,"don't use underscores in Go names; var total_as should be totalAs
+
+http://golang.org/doc/effective_go.html#mixed-caps"
+62555040,PullRequestReviewCommentEvent,should drop = 0 from declaration of var milestone; it is the zero value
+62555040,PullRequestReviewCommentEvent,"comment on exported method Service.ActiveRevisionNames should be of the form ""ActiveRevisionNames ...""
+
+https://golang.org/wiki/CodeReviewComments#doc-comments"
+62555040,PullRequestReviewCommentEvent,"type pipedApiApplicationStore should be pipedAPIApplicationStore
+
+https://golang.org/wiki/CodeReviewComments#initialisms"
+62555040,PullRequestReviewCommentEvent,"receiver name p should be consistent with previous receiver name m for SealedSecretManagement
+
+https://golang.org/wiki/CodeReviewComments#receiver-names"
+62555040,PullRequestReviewCommentEvent,"if block ends with a return statement, so drop this else and outdent its block
+
+https://golang.org/wiki/CodeReviewComments#indent-error-flow"
+62555040,PullRequestReviewCommentEvent,"func parameter t_ should be t
+
+https://golang.org/wiki/CodeReviewComments#initialisms"
+62555040,PullRequestReviewCommentEvent,ineffectual assignment to err
+15823519,PullRequestReviewCommentEvent,Updated
+15823519,PullRequestReviewCommentEvent,![Codacy](https://app.codacy.com/assets/images/favicon.png) Issue found: [Missing trailing comma](https://app.codacy.com/gh/unoplatform/uno/pullRequest?prid=5671934)
+15823519,PullRequestReviewCommentEvent,Codacy found an issue: [Move this 'default:' case to the beginning or end of this 'switch' statement.](https://app.codacy.com/gh/unoplatform/uno/pullRequest?prid=5363624)
+59378654,PullRequestReviewCommentEvent,Or a signal. Fix this
+59378654,PullRequestReviewCommentEvent,Non modular change
+59378654,PullRequestReviewCommentEvent,Don't need to mark skyrat edit in a skyrat file
+59378654,PullRequestReviewCommentEvent,ditto
+59378654,PullRequestReviewCommentEvent,I'm not sure this is a good change to have.
+59378654,PullRequestReviewCommentEvent,quirk
+59378654,PullRequestReviewCommentEvent,Quirk
+59378654,PullRequestReviewCommentEvent,Move upto the carbon/human level.
+59378654,PullRequestReviewCommentEvent,Ditto
+59378654,PullRequestReviewCommentEvent,Move up to the carbon/human level
+59378654,PullRequestReviewCommentEvent,this
+78513119,PullRequestReviewCommentEvent,"Error loading packages/google-cloud-discoveryengine/.github/.OwlBot.yaml:
+Error: ENOENT: no such file or directory, open '/tmp/tmp-1-JHaKl327MyoQ/dest/packages/google-cloud-discoveryengine/.github/.OwlBot.yaml'"
+78513119,PullRequestReviewCommentEvent,New commit 76a7c6859af8a9c64a5026f9ab42f2161def2fae added to origin/owl-bot-copy while I was coping code.
+47766566,PullRequestReviewCommentEvent,"I think the scripts are for builders on Buildbot, Buildbot will run these scripts during build. As per @vladimirlaz , developer will control these scripts, you can change to ninja as you wish, but you need to change all of the scripts, e.g. conigure.sh, compile.sh"
+7975741,PullRequestReviewCommentEvent,Leave them in and we'll address this with a larger testing suite at some point.
+7975741,PullRequestReviewCommentEvent,L62
+7975741,PullRequestReviewCommentEvent,"On second pass `wrf` and `netcdf` distribute thermal, `hrrr_grib` and `hrrr_netcdf` do not distribute thermal in this manner."
+7975741,PullRequestReviewCommentEvent,Redundant
+7975741,PullRequestReviewCommentEvent,Are these needed? I'd suggest removing to not confuse down the road.
+7975741,PullRequestReviewCommentEvent,Removing
+7975741,PullRequestReviewCommentEvent,Spelling is not my strong siut.
+7975741,PullRequestReviewCommentEvent,This was pre good IDE's when that was written...
+7975741,PullRequestReviewCommentEvent,This was the major issue. The `variables` were filtered to non-wind variables where the `data_queue` was expecting there to be values to get (even if they aren't used).
+7975741,PullRequestReviewCommentEvent,Nothing like forcing an implementation!
+7975741,PullRequestReviewCommentEvent,Scope creep should be the name of this PR!
+7975741,PullRequestReviewCommentEvent,Looks like @jomey has looked through SMRF to check that this isn't the case in AWSM PR [#65](https://github.com/USDA-ARS-NWRC/awsm/pull/65)
+7975741,PullRequestReviewCommentEvent,changed to 79
+7975741,PullRequestReviewCommentEvent,"Scope has creeped, good ole find all!"
+7975741,PullRequestReviewCommentEvent,done
+7975741,PullRequestReviewCommentEvent,removed
+7975741,PullRequestReviewCommentEvent,new file
+7975741,PullRequestReviewCommentEvent,"Without snowav, matplotlib and seaborn aren't needed. Now there are no requirements for AWSM!"
+7975741,PullRequestReviewCommentEvent,"The link for future sake:
+https://unidata.github.io/netcdf4-python/netCDF4/index.html#netCDF4.num2date"
+7975741,PullRequestReviewCommentEvent,"Agreed.
+
+https://github.com/USDA-ARS-NWRC/inicheck/issues/55"
+7975741,PullRequestReviewCommentEvent,You got a lower number so you won!
+7975741,PullRequestReviewCommentEvent,scope has been crept.
+7975741,PullRequestReviewCommentEvent,Moved.
+7975741,PullRequestReviewCommentEvent,Dang spell checker didn't catch this...
+7975741,PullRequestReviewCommentEvent,We have v0.2.0.8 (which I assume is actually v2.0.8). 
+7975741,PullRequestReviewCommentEvent,Nice and clean!
+7975741,PullRequestReviewCommentEvent,docstring?
+23387312,PullRequestReviewCommentEvent,"```suggestion
+author: V-CAXIAN
+```"
+46721658,PullRequestReviewCommentEvent,That an imported enum E conforms to BitwiseCopyable.
+46721658,PullRequestReviewCommentEvent,That was requested here: https://github.com/apple/swift-evolution/pull/2314#discussion_r1508201954 .
+46721658,PullRequestReviewCommentEvent,Added.
+46721658,PullRequestReviewCommentEvent,"Added a footnote for raw-value enums.  Inference is based on the enum itself, not the `RawValue` type witness of its synthesized `RawRepresentable` conformance.
+
+Added a section on imported C and C++ types.  Conformance is inferred unless the fields are not representable in Swift (or in the C++ case if the type is non-trivial).  Conformance can be forced even when not inferred via `__attribute__((__swift_attr__(""_BitwiseCopyable"")))`."
+46721658,PullRequestReviewCommentEvent,"Yes, that too is legal."
+46721658,PullRequestReviewCommentEvent,Thanks!
+46721658,PullRequestReviewCommentEvent,Sounds great!  Added a TODO.
+46721658,PullRequestReviewCommentEvent,"Nit: this refers to `%phi`, right?"
+46721658,PullRequestReviewCommentEvent,"Can eliminating such a borrow result in allowing a deinit to be hoisted over a deinit barrier?  For example, in the test case if the last block looked as follows: 
+
+```
+ bb3(%11 : @owned $Klass, %12 : @guaranteed $Klass, %13 : @owned $Klass):
+   destroy_value %13 : $Klass
+   some_deinit_barrier
+   end_borrow %12 : $Klass
+   destroy_value %11 : $Klass
+   %17 = tuple ()
+   return %17 : $()
+ }
+```"
+46721658,PullRequestReviewCommentEvent,Fixed to just add the move to the worklist.
+46721658,PullRequestReviewCommentEvent,Thank you for the explanation!  Fixed.
+46721658,PullRequestReviewCommentEvent,"That makes sense.  Fixed to pass `NonLifetimeEnding` to `handleUsePoint`.  And actually, is there any reason that we want the `extend_lifetime` instructions to be added to `PrunedLiveness` with `/*lifetimeEnding=*/true`?  I haven't thought of one--we still get all users within the `LinearLifetime` boundary either way--so I removed that special behavior."
+46721658,PullRequestReviewCommentEvent,"Okay, so that function only will need to be renamed.
+
+Please apply this diff.
+
+```
+diff --git a/test/IRGen/moveonly_value_functions.sil b/test/IRGen/moveonly_value_functions.sil
+index 579f79d0b49..bb94b2be4a1 100644
+--- a/test/IRGen/moveonly_value_functions.sil
++++ b/test/IRGen/moveonly_value_functions.sil
+@@ -14,7 +14,11 @@ import Swift
+   @_alwaysEmitIntoClient @inlinable deinit
+ }
+ 
+-sil @$sSp12deinitialize5countSvSi_tF : $@convention(method) <τ_0_0 where τ_0_0 : ~Copyable> (Int, UnsafeMutablePointer<τ_0_0>) -> UnsafeMutableRawPointer
++struct Int {
++  var _value: Builtin.Int64
++}
++
++sil @deinit_count : $@convention(method) <τ_0_0 where τ_0_0 : ~Copyable> (moveonly_value_functions.Int, UnsafeMutablePointer<τ_0_0>) -> UnsafeMutableRawPointer
+ 
+ // CHECK-LABEL: define{{.*}} @""$s15Synchronization5_CellVAARi_zrlEfD""(
+ // CHECK-SAME:      ptr %""_Cell<Value>"", 
+@@ -22,20 +26,20 @@ sil @$sSp12deinitialize5countSvSi_tF : $@convention(method) <τ_0_0 where τ_0_0
+ // CHECK-SAME:  ) 
+ // CHECK-SAME:  {
+ // CHECK:       entry:
+-// CHECK:         [[CELL_VWT_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %""_Cell<Value>"", i64 -1
++// CHECK:         [[CELL_VWT_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %""_Cell<Value>"", [[INT]] -1
+ // CHECK:         %""_Cell<Value>.valueWitnesses"" = load ptr, ptr [[CELL_VWT_ADDR]]
+ // CHECK:         [[CELL_SIZE_ADDR:%[^,]+]] = getelementptr inbounds %swift.vwtable, ptr %""_Cell<Value>.valueWitnesses"", i32 0, i32 8
+-// CHECK:         %size = load i64, ptr [[CELL_SIZE_ADDR]]
+-// CHECK:         [[DEST:%[^,]+]] = alloca i8, i64 %size
++// CHECK:         %size = load [[INT]], ptr [[CELL_SIZE_ADDR]]
++// CHECK:         [[DEST:%[^,]+]] = alloca i8, [[INT]] %size
+ // CHECK:         call void @llvm.lifetime.start.p0(i64 -1, ptr [[DEST]])
+-// CHECK:         [[VALUE_METADATA_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %""_Cell<Value>"", i64 2
++// CHECK:         [[VALUE_METADATA_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %""_Cell<Value>"", [[INT]] 2
+ // CHECK:         %Value = load ptr, ptr [[VALUE_METADATA_ADDR]]
+-// CHECK:         [[VALUE_VWT_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %Value, i64 -1
++// CHECK:         [[VALUE_VWT_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %Value, [[INT]] -1
+ // CHECK:         %Value.valueWitnesses = load ptr, ptr [[VALUE_VWT_ADDR]]
+ // CHECK:         [[VALUE_INIT_WITH_TAKE_ADDR:%[^,]+]] = getelementptr inbounds ptr, ptr %Value.valueWitnesses, i32 4
+ // CHECK:         %InitializeWithTake = load ptr, ptr [[VALUE_INIT_WITH_TAKE_ADDR]]
+ // CHECK:         call ptr %InitializeWithTake(ptr noalias [[DEST]], ptr noalias [[SOURCE]], ptr %Value)
+-// CHECK:         call swiftcc ptr @""$sSp12deinitialize5countSvSi_tF""(i64 1, ptr [[DEST]], ptr %Value)
++// CHECK:         call swiftcc ptr @deinit_count(i64 1, ptr [[DEST]], ptr %Value)
+ // CHECK:         call void @llvm.lifetime.end.p0(i64 -1, ptr [[DEST]])
+ // CHECK:       }
+ sil @$s15Synchronization5_CellVAARi_zrlEfD : $@convention(method) <Value where Value : ~Copyable> (@in _Cell<Value>) -> () {
+@@ -46,8 +50,8 @@ bb0(%0 : $*_Cell<Value>):
+   %8 = struct $UnsafeMutablePointer<Value> (%7 : $Builtin.RawPointer)
+   %9 = integer_literal $Builtin.Int64, 1
+   %10 = struct $Int (%9 : $Builtin.Int64)
+-  %11 = function_ref @$sSp12deinitialize5countSvSi_tF : $@convention(method) <τ_0_0 where τ_0_0 : ~Copyable> (Int, UnsafeMutablePointer<τ_0_0>) -> UnsafeMutableRawPointer
+-  %12 = apply %11<Value>(%10, %8) : $@convention(method) <τ_0_0 where τ_0_0 : ~Copyable> (Int, UnsafeMutablePointer<τ_0_0>) -> UnsafeMutableRawPointer
++  %11 = function_ref @deinit_count : $@convention(method) <τ_0_0 where τ_0_0 : ~Copyable> (moveonly_value_functions.Int, UnsafeMutablePointer<τ_0_0>) -> UnsafeMutableRawPointer
++  %12 = apply %11<Value>(%10, %8) : $@convention(method) <τ_0_0 where τ_0_0 : ~Copyable> (moveonly_value_functions.Int, UnsafeMutablePointer<τ_0_0>) -> UnsafeMutableRawPointer
+   %13 = tuple ()
+   dealloc_stack %1 : $*_Cell<Value>
+   return %13 : $()
+```"
+46721658,PullRequestReviewCommentEvent,Should this comment be deleted?
+46721658,PullRequestReviewCommentEvent,Fixed the latter: https://github.com/apple/swift/pull/69054 .
+46721658,PullRequestReviewCommentEvent,https://github.com/apple/swift/pull/69069
+46721658,PullRequestReviewCommentEvent,"""an Unowned value"""
+46721658,PullRequestReviewCommentEvent,Do we need the same change in LexicalDestroyFolding's findBorroweeUsage?
+46721658,PullRequestReviewCommentEvent,Will fix in https://github.com/apple/swift/pull/58791.
+46721658,PullRequestReviewCommentEvent,Hooray--thank you!
+46721658,PullRequestReviewCommentEvent,Is this `restrictedTo`?
+46721658,PullRequestReviewCommentEvent,Would it be worth asserting that `liveness.getBlockLiveness(block) == ::LiveWithin` at the top?
+46721658,PullRequestReviewCommentEvent,"As discussed elsewhere, mayAccessPointer remains in C++."
+46721658,PullRequestReviewCommentEvent,"Just a temporary hack, I've been working on removing it."
+46721658,PullRequestReviewCommentEvent,Folded a fix into https://github.com/apple/swift/pull/66728 via https://github.com/apple/swift/compare/c322ba0353dc6ddda92c9aaccd24a669b991b286..82ba69e31909925436d48b19bc40dc71f430f50c .
+133832,PullRequestReviewCommentEvent,"It's the same code in the same library. Why all the effort?
+Isn't this making everything super complicated? :) "
+133832,PullRequestReviewCommentEvent,We can also tag version 3.0?
+133832,PullRequestReviewCommentEvent,"Ah, i just did it ;) let me know what you think."
+133832,PullRequestReviewCommentEvent,Fixed :) 
+133832,PullRequestReviewCommentEvent,"Not sure about `is_auto_generated`, if there is no use-case it could be removed?"
+133832,PullRequestReviewCommentEvent,The `locale` is now passed in. This could also be removed as the video already has a `language`.
+133832,PullRequestReviewCommentEvent,Ooops good one. Thanks! Fixed :) 
+133832,PullRequestReviewCommentEvent,A docblock would be nice :) Please see the other methods.
+133832,PullRequestReviewCommentEvent,"There is also a [test](https://github.com/php-vcr/php-vcr/blob/master/tests/VCR/CodeTransform/CurlCodeTransformTest.php) for this class, would be great if you could update those tests as well.  "
+133832,PullRequestReviewCommentEvent,"Good idea, will do"
+133832,PullRequestReviewCommentEvent,"space between `of""204 No Content""` ;) "
+133832,PullRequestReviewCommentEvent,"Mh great find, thanks."
+133832,PullRequestReviewCommentEvent,Added https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/4755
+133832,PullRequestReviewCommentEvent,"Aaaah thanks, what an error message ;) "
+133832,PullRequestReviewCommentEvent,"PHP-VCR is still supporting PHP 5.3, please use `array()`."
+133832,PullRequestReviewCommentEvent,typo?
+133832,PullRequestReviewCommentEvent,u should suffix the interface name with interface. e.g. DiceInterface
+133832,PullRequestReviewCommentEvent,"rename it to a convention: ""app.dice.d6"""
+133832,PullRequestReviewCommentEvent,"ok, you don't need your adjustments to the .htaccess etc. just run your app using `php ./bin/console server:run`"
+133832,PullRequestReviewCommentEvent,not necessary 
+133832,PullRequestReviewCommentEvent,"""fallback for locations who **don't** have physical-BLE-Beacons"""
+133832,PullRequestReviewCommentEvent,"Very ES6 :D nice :+1: 
+"
+133832,PullRequestReviewCommentEvent,Action!
+133832,PullRequestReviewCommentEvent,No problem :) 
+133832,PullRequestReviewCommentEvent,Awesome changelog!
+26586327,PullRequestReviewCommentEvent,"Good idea, I updated the auth middleware to validate that the token can read the pr instead of the repo.
+
+We could perform this lookup in the handler since we have to do that anyway, but it would require passing the bearer token through to the handler which probably means storing it in `context`.
+
+I'm open to that if it's better to store the token in `context` vs having to lookup the same pull request twice. Though I do believe the github client is using caching, so perhaps that second lookup is not so bad?"
+26586327,PullRequestReviewCommentEvent,"Nice catch, thanks!"
+26586327,PullRequestReviewCommentEvent,updated.
+58020879,PullRequestReviewCommentEvent,Test1 : Comment1
+58020879,PullRequestReviewCommentEvent,Initial Comment
+48565599,PullRequestReviewCommentEvent,it's this line
+29739965,PullRequestReviewCommentEvent,"prettier/prettier: Replace `string` with `⏎··string,⏎`"
+29739965,PullRequestReviewCommentEvent,comma-dangle: Missing trailing comma.
+29739965,PullRequestReviewCommentEvent,"prettier/prettier: Replace `flatten(plugins.map(p·=>·p.haste.providesModuleNodeModules)))` with `⏎········flatten(plugins.map(p·=>·p.haste.providesModuleNodeModules)),⏎······),`"
+29739965,PullRequestReviewCommentEvent,"
+<!--
+  0 failure: 
+  1 warning:  bots/dangerfile.j...
+  
+  
+  DangerID: danger-id-danger_pr;
+  File: bots/dangerfile.js;
+  Line: 14;
+-->
+
+- :warning: bots/dangerfile.js line 14 – 'exec' is assigned a value but never used. (no-unused-vars)
+
+
+  "
+14330603,PullRequestReviewCommentEvent,These 4 added lines are not executed by any test.  [Details](https://cockpit-logs.us-east-1.linodeobjects.com/pull-18115-20230103-122827-2f1a70ab-fedora-36-devel//Coverage/lcov/github-pr.diff.gcov.html)
+6702118,PullRequestReviewCommentEvent,**Caution!** This contains a submodule update
+34194823,PullRequestReviewCommentEvent,Note that on line 476 this value is converted toDeg (from radians)
+24485218,PullRequestReviewCommentEvent,"```suggestion
+            self.stdout.write(""\n"" + self.shell.get_exception_only())
+```"
+24802730,PullRequestReviewCommentEvent,"[Optional Chaining](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Optional_chaining) is not supported on Node < 14.
+```suggestion
+    getVueJestConfig(config).tsConfig || """"
+```"
+24802730,PullRequestReviewCommentEvent,Treated as warning.
+24802730,PullRequestReviewCommentEvent,Added simple example
+24802730,PullRequestReviewCommentEvent,Also added `NUGET_PACKAGES` on below example.
+24802730,PullRequestReviewCommentEvent,Cannot change because relative paths change. (It breaks unit tests)
+24802730,PullRequestReviewCommentEvent,Fixed. (also [src/installer.ts](https://github.com/actions/setup-dotnet/blob/39d3726ca6f648bd8a27ab89bb2b183a2153322e/src/installer.ts#L191))
+24802730,PullRequestReviewCommentEvent,"Like #80, ""コンス トラクター"" shoud be ""コンストラクター""."
+24802730,PullRequestReviewCommentEvent,"< Xref=System.Memory%601.ToArray%2A >
+This is syntax miss from original doc."
+24802730,PullRequestReviewCommentEvent,"@dmitry-shibanov 
+GitHub Action schema warns this should be string. Should I still remove the quotes?
+![Incorrect type. Expected ""string"".](https://user-images.githubusercontent.com/24802730/182259566-1fae793c-8a13-4eea-b8e3-cef4972cc437.png)
+"
+57515506,PullRequestReviewCommentEvent,"Okay, I noted it."
+53609688,PullRequestReviewCommentEvent,"cara, acho aqui poderia ser usado o query mediator de obter usuário logado
+![image](https://github.com/prefeiturasp/SME-NovoSGP/assets/53609688/dbfa9bac-1243-4768-8f12-05c289f9d59d)
+"
+53609688,PullRequestReviewCommentEvent,OK
+53609688,PullRequestReviewCommentEvent,"verdade Hélio
+não notei esse trecho
+se a intenção é obter uma só descrição aqui pode ser usado:
+
+componentesCurricularesEOL.FirstOrDefault(c => c.Codigo == componente.Id || c.CodigoComponenteTerritorioSaber == componente.Id)?.Descricao (em caso de retornar mais de um registro)
+
+ou 
+
+componentesCurricularesEOL.SingleOrDefault(c => c.Codigo == componente.Id || c.CodigoComponenteTerritorioSaber == componente.Id)?.Descricao (em caso de ter certeza q retornará somente 1 registro)"
+53609688,PullRequestReviewCommentEvent,ajustado
+53609688,PullRequestReviewCommentEvent,resolvido
+53609688,PullRequestReviewCommentEvent,Esse arquivo aqui realmente tem q ser ignorado? Não deveria ser excluído?
+53609688,PullRequestReviewCommentEvent,Pergunta: Não será mais necessário apresentar carregamento na tela?
+53609688,PullRequestReviewCommentEvent,"Essa variável ""conselhoClasseAluno"" é de uma classe de domínio?
+É possível fazer esse cast diretamente para uma classe DTO?"
+53609688,PullRequestReviewCommentEvent,Ah OK.
+53609688,PullRequestReviewCommentEvent,"Acho que aqui poderia ser somente um foreach e dentro dele ter os condicionais para cada operação.
+Se a lista é um IEnumerable, ele acaba indo duas vezes no banco para buscar os dados e materializar."
+53609688,PullRequestReviewCommentEvent,"Coisa boba. Só o acento na palavra ""esta"" da mensagem.
+Já que são professores que usam o sistema. hehe"
+53609688,PullRequestReviewCommentEvent,Valeu!
+53609688,PullRequestReviewCommentEvent,"usei para teste e esqueci de remover.
+Ajustado."
+53609688,PullRequestReviewCommentEvent,no lugar do valor 6 poderia criar uma constante ou utilizar um enumerador já existente.
+53609688,PullRequestReviewCommentEvent,item ao anterior
+53609688,PullRequestReviewCommentEvent,sugestão de alterar atribuição com Enumerable.Empty
+53609688,PullRequestReviewCommentEvent,aqui tbm precisa considerar login
+53609688,PullRequestReviewCommentEvent,"Renomear para ""EventoEhLetivo"""
+53609688,PullRequestReviewCommentEvent,Esse id é fixo mesmo?
+53609688,PullRequestReviewCommentEvent,mesmo comentário anterior.
+53609688,PullRequestReviewCommentEvent,"essa validação deveria ser feita à partir da linha 164, pq à partir dali a variável já pode ser nula"
+53609688,PullRequestReviewCommentEvent,"Sugestão de ordenação:
+.OrderBy(a => a.NomeSocial ?? a.NomeAluno)
+com base na lista de frequência dessa forma deu boa
+"
+53609688,PullRequestReviewCommentEvent,"resolvido
+"
+53609688,PullRequestReviewCommentEvent,"De acordo com a condição anterior, acredito que essa condição é desnecessária."
+53609688,PullRequestReviewCommentEvent,"comenta essa linha por favor
+essa sincronização tem q ficar desativada"
+53609688,PullRequestReviewCommentEvent,aqui acho q poderia criar o objeto esperado na mensagem e serializar.
+53609688,PullRequestReviewCommentEvent,faltou passar a variável regenciaClasseInfantilId aqui 
+53609688,PullRequestReviewCommentEvent,utilizar constante ou enumerador se houver pra deixar mais claro q o tipo 3 é de programa
+53609688,PullRequestReviewCommentEvent,faltou definir o valor do enumerador aqui
+53609688,PullRequestReviewCommentEvent,"cara, acho q aqui o código poderia ser escrito assim : ""!turma.Historica && (turma.Deve..."".
+Acho melhora a leitura."
+53609688,PullRequestReviewCommentEvent,"Nesse caso não precisaria incluir mais cláusulas nesse WHERE para localizar especificamente esse parâmetro do tipo 82?
+
+"
+53609688,PullRequestReviewCommentEvent,Removido e implementado via mediator.
+53609688,PullRequestReviewCommentEvent,"Então Igor, minha sugestão seria pra deixar mais identificado ainda:
+Por exemplo no topo da classe teriam variáveis constantes identificando cada tipo de etapa:
+""private const int ENSINO_MEDIO = 6;
+ private const int ENSINO_MEDIO_NORMAL = 9 . . . ""
+ Na base do EOL (se1426) é possível obter as identificações das etapas através dessa consulta:
+ select * from etapa_ensino where cd_etapa_ensino in (6, 9, 17)"
+53609688,PullRequestReviewCommentEvent,"Só mais um detalhe . . . hehe
+definir essas variáveis com a primeira letra minúscula"
+29302267,PullRequestReviewCommentEvent,"```suggestion
+- For preview, you need to update your VS Code settings.json file, as described under **Preview Content** below.
+```"
+37885440,PullRequestReviewCommentEvent,This has been setup
+34151961,PullRequestReviewCommentEvent,test
+36754821,PullRequestReviewCommentEvent,Identical blocks of code found in 2 locations. Consider refactoring.
+36754821,PullRequestReviewCommentEvent,Function `UserLink` has 50 lines of code (exceeds 25 allowed). Consider refactoring.
+36754821,PullRequestReviewCommentEvent,Space between { and | missing.
+36754821,PullRequestReviewCommentEvent,Space inside { missing.
+36754821,PullRequestReviewCommentEvent,Useless assignment to variable - `opt`.
+36754821,PullRequestReviewCommentEvent,Line is too long. [100/80]
+36754821,PullRequestReviewCommentEvent,Extra empty line detected at block body end.
+36754821,PullRequestReviewCommentEvent,Use 2 (not 6) spaces for indentation.
+36754821,PullRequestReviewCommentEvent,Space missing after colon.
+36754821,PullRequestReviewCommentEvent,Tab detected.
+36754821,PullRequestReviewCommentEvent,Trailing whitespace detected.
+36754821,PullRequestReviewCommentEvent,"Expression at 70, 13 should be on its own line."
+36754821,PullRequestReviewCommentEvent,Possible command injection
+36754821,PullRequestReviewCommentEvent,WellAttribute#broadcast_warehouse_message refers to 'message' more than self (maybe move it to another class?)
+36754821,PullRequestReviewCommentEvent,"Move this ""if"" to a new line or add the missing ""else""."
+36754821,PullRequestReviewCommentEvent,"'PWD' detected in this expression, review this potentially hardcoded credential."
+36754821,PullRequestReviewCommentEvent,Merge this if statement with the enclosing one.
+2006565,PullRequestReviewCommentEvent,Yup. Perfect!
+2006565,PullRequestReviewCommentEvent,All done.
+16718781,PullRequestReviewCommentEvent,"![MAJOR](https://sonarsource.github.io/sonar-github/severity-major.png 'Severity: MAJOR') Refactor this method to reduce its Cognitive Complexity from 36 to the 30 allowed. [![rule](https://sonarsource.github.io/sonar-github/rule.png)](https://sonarcloud.io/coding_rules#rule_key=squid%3AS3776)
+"
+55852648,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 34: did not find expected key.
+9448959,PullRequestReviewCommentEvent,"Seems good once the issues you mentioned are addressed.
+On Jun 16, 2015 9:29 AM, ""Awais Qureshi"" <notifications@github.com> wrote:
+
+> In
+> lms/djangoapps/verify_student/migrations/0010_auto__del_field_softwaresecurephotoverification_window.py
+> <https://github.com/edx/edx-platform/pull/8531#discussion_r32520213>:
+>
+> > +from south.db import db
+> > +from south.v2 import SchemaMigration
+> > +from django.db import models
+> > +
+> > +
+> > +class Migration(SchemaMigration):
+> > +
+> > +    def forwards(self, orm):
+> > +        # Deleting field 'SoftwareSecurePhotoVerification.window'
+> > +        db.delete_column('verify_student_softwaresecurephotoverification', 'window_id')
+> > +
+> > +
+> > +    def backwards(self, orm):
+> > +        # Add field 'SoftwareSecurePhotoVerification.window'. Setting its default value to None
+> > +        if db.backend_name == 'mysql':
+> > +            db.execute('ALTER TABLE verify_student_softwaresecurephotoverification ADD `window_id` int(11) DEFAULT NULL;')
+>
+> Default south API added the add_column field. But while testing the
+> verification submission it gives again the window id cannot be null.
+>
+> —
+> Reply to this email directly or view it on GitHub
+> <https://github.com/edx/edx-platform/pull/8531/files#r32520213>.
+>
+"
+49554844,PullRequestReviewCommentEvent,`不应使用 '.*' 形式的导入 - java.util.* 。`
+19785354,PullRequestReviewCommentEvent,ping - another advantage of `Iterables.getFirst` is that we don't need to call `.iterator()` twice
+19785354,PullRequestReviewCommentEvent,Test
+19785354,PullRequestReviewCommentEvent,"Similar comment to above, it's probably more actionable for the user if we tell them the directory where we couldn't list the files, and we should add the message to `errorMessages` so that the destination directory gets cleaned up."
+30189218,PullRequestReviewCommentEvent,"So the ""what kind of tests"" question still stands. *what* are you trying to achieve?"
+2932368,PullRequestReviewCommentEvent,"I agree, we could just tell the user what to do, without be OS specific, like this:
+
+```
+... and enable the custom target by copying `custom_targets.json` from the custom target folder into the root of your project.
+```"
+2932368,PullRequestReviewCommentEvent,"![DelightfulEvilJohndory-size_restricted](https://github.com/catie-aq/cookiecutter_mbed-os-app/assets/2932368/8a7f3cb5-9ef7-451c-ad8d-d20529825261)
+"
+2932368,PullRequestReviewCommentEvent,"That's a lot of issues created related to the same thing: ""updating the readme""."
+2932368,PullRequestReviewCommentEvent,"```suggestion
+```
+
+Remove OS specific ""copy"" command"
+2932368,PullRequestReviewCommentEvent,"Agreed, could be added on cookiecutter templates as well to save some line in READMEs"
+25687724,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 11: could not find expected ':'.
+29553947,PullRequestReviewCommentEvent,![Codacy](https://app.codacy.com/assets/images/favicon.png) Issue found: [Strings must use singlequote.](https://app.codacy.com/gh/owncloud/ocis-hello/pullRequest?prid=5709816)
+49659427,PullRequestReviewCommentEvent,Not enough banana!
+52199148,PullRequestReviewCommentEvent,thanks! fixed
+92114575,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 6: could not find expected ':'.
+92114575,PullRequestReviewCommentEvent,Golint comments: exported type FetchResult should have comment or be unexported. [More info](https://golang.org/wiki/CodeReviewComments#doc-comments). <!-- golint -->
+41213312,PullRequestReviewCommentEvent,Golint comments: exported function NewWatcherWithVersion should have comment or be unexported. [More info](https://golang.org/wiki/CodeReviewComments#doc-comments). <!-- golint -->
+41213312,PullRequestReviewCommentEvent,"Golint imports: a blank import should be only in a main or test package, or have a comment justifying it. <!-- golint -->"
+41213312,PullRequestReviewCommentEvent,Cannot parse file: error unmarshaling JSON: while decoding JSON: json: cannot unmarshal string into Go value of type repoowners.FullConfig.
+41213312,PullRequestReviewCommentEvent,"```suggestion
+		var err error
+```
+Golint zero-value: should drop = nil from declaration of var err; it is the zero value. <!-- golint -->"
+62236447,PullRequestReviewCommentEvent,"```suggestion
+    return map_attributes(collected, mapping, 'MO')
+
+```"
+62236447,PullRequestReviewCommentEvent,"I'm going to enable `Flake8`, and it'll start complaining about it"
+62236447,PullRequestReviewCommentEvent,So what's the meaning of this field now? and in 2 weeks when everything is done through the API?
+62236447,PullRequestReviewCommentEvent,"Oops, typos :(
+Thanks for fixing!"
+62236447,PullRequestReviewCommentEvent,"Forcing states for ""daily"" and no states for ""research""?
+I was thinking to completely retiring ""daily"" maybe? but it sounds like a funny overkill"
+61849395,PullRequestReviewCommentEvent,Should we remove this now?  It;s not something that we'll create in the future.  (But it is probably lying around in many people's working directories)
+16011037,PullRequestReviewCommentEvent,E501 line too long (123 > 115 characters)
+16011037,PullRequestReviewCommentEvent,"F821 undefined name 'DomainPermissionsMirror'
+F821 undefined name 'domain'"
+16011037,PullRequestReviewCommentEvent,'taskOne' is defined but never used. (no-unused-vars)
+16011037,PullRequestReviewCommentEvent,"Missing space before function parentheses. (space-before-function-paren)
+Missing space before opening brace. (space-before-blocks)"
+16011037,PullRequestReviewCommentEvent,"F401 'unittest.skip' imported but unused
+E261 at least two spaces before inline comment"
+16011037,PullRequestReviewCommentEvent,"E302 expected 2 blank lines, found 1"
+16011037,PullRequestReviewCommentEvent,W391 blank line at end of file
+16011037,PullRequestReviewCommentEvent,W504 line break after binary operator
+16011037,PullRequestReviewCommentEvent,E121 continuation line under-indented for hanging indent
+16011037,PullRequestReviewCommentEvent,"E251 unexpected spaces around keyword / parameter equals
+E712 comparison to True should be 'if cond is True:' or 'if cond:'"
+16011037,PullRequestReviewCommentEvent,Expected indentation of 16 spaces but found 20. (indent)
+16011037,PullRequestReviewCommentEvent,W293 blank line contains whitespace
+16011037,PullRequestReviewCommentEvent,E251 unexpected spaces around keyword / parameter equals
+16011037,PullRequestReviewCommentEvent,exported function CloneAppData should have comment or be unexported
+16011037,PullRequestReviewCommentEvent,"E231 missing whitespace after ','
+E501 line too long (91 > 79 characters)
+E272 multiple spaces before keyword"
+16011037,PullRequestReviewCommentEvent,W291 trailing whitespace
+16011037,PullRequestReviewCommentEvent,"comment on exported function RunCommandAgainstAllAppsInParallel should be of the form ""RunCommandAgainstAllAppsInParallel ..."""
+16011037,PullRequestReviewCommentEvent,should replace errorCount += 1 with errorCount++
+37820187,PullRequestReviewCommentEvent,warning CS1591: Missing XML comment for publicly visible type or member 'PolicyDecisionEventArgs.PolicyDecisionEventArgs(IntPtr)'
+37820187,PullRequestReviewCommentEvent,warning CS1587: XML comment is not placed on a valid language element
+37820187,PullRequestReviewCommentEvent,"warning CA1707: In member Tizen.Uix.InputMethod.InputMethodEditor.SetFloatingMode(bool), remove the underscores from parameter name floating_mode."
+37820187,PullRequestReviewCommentEvent,warning CA1051: Do not declare visible instance fields
+37820187,PullRequestReviewCommentEvent,warning CA1717: Only FlagsAttribute enums should have plural names
+39886733,PullRequestReviewCommentEvent,"```
+ test  2024-04-18T12:47:34.188000Z TestFramework (ERROR): Unexpected exception caught during testing 
+                                   Traceback (most recent call last):
+                                     File ""/ci_container_base/ci/scratch/build/bitcoin-i686-pc-linux-gnu/test/functional/test_framework/test_framework.py"", line 132, in main
+                                       self.run_test()
+                                     File ""/ci_container_base/ci/scratch/build/bitcoin-i686-pc-linux-gnu/test/functional/rpc_getblockfrompeer.py"", line 163, in run_test
+                                       limited_peer_id = next(peer for peer in pruned_node.getpeerinfo() if peer[""servicesnames""] == ['WITNESS', 'NETWORK_LIMITED'])[""id""]
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                   StopIteration
+```
+
+https://cirrus-ci.com/task/4803962228965376?logs=ci#L3152"
+39886733,PullRequestReviewCommentEvent,"```
+         if [ $? -ne 0 ]; then
+             ^-- SC2181: Check exit code directly with e.g. 'if mycmd;', not indirectly with $?."
+39886733,PullRequestReviewCommentEvent,"
+
+Thanks, also fixed the test issue in #20760
+"
+39886733,PullRequestReviewCommentEvent,"nit: Could explicitly pass a timeout to waitfornewblock and inline as lambda:
+
+
+```py
+t = Thread(target=lambda: self.nodes[0].waitfornewblock(timeout=             ))"
+53266321,PullRequestReviewCommentEvent,"If we want to tree shake, I believe we have to reference the es module folder directly @kennylam @photodow "
+36771401,PullRequestReviewCommentEvent,"This pull request does not update CHANGELOG.md.
+
+Please consider if this change would be noticeable to a partner or user and either update CHANGELOG.md or resolve this conversation.
+<!-- changelog-comment -->"
+88147183,PullRequestReviewCommentEvent,"
+<!--
+  1 failure:  The root .editorc...
+  0 warning: 
+  
+  
+  DangerID: danger-id-Danger;
+  File: types/three/examples/jsm/helpers/ViewHelper.d.ts;
+  Line: 3;
+-->
+- :no_entry_sign: The root .editorconfig style specifies spaces for whitespace. Please use spaces in new or changed types.
+
+
+
+  "
+34688948,PullRequestReviewCommentEvent,tu es sur que l'on a besoin de faire ça ici ? (j'ai oublié quand et pourquoi il faut utiliser .bind(this)
+34688948,PullRequestReviewCommentEvent,"Right, but let's keep it for another PR"
+34688948,PullRequestReviewCommentEvent,"Right, this is more readable"
+34688948,PullRequestReviewCommentEvent,"can you remove this line and add a postinstall command like https://github.com/cozy/cozy-libs/blob/master/package.json#L16
+
+`""postinstall"": ""lerna bootstrap""`"
+7571158,PullRequestReviewCommentEvent,Should probably check if it already contains `no-cache` just in case (and just keep the existing value)
+7571158,PullRequestReviewCommentEvent,Seems fine now :+1:
+7571158,PullRequestReviewCommentEvent,Shouldn't this also de-escape an escaped `\`?
+7571158,PullRequestReviewCommentEvent,OIC
+7571158,PullRequestReviewCommentEvent,"I understand what this does, but the way it's tested is really the reverse of what you'd expect."
+7571158,PullRequestReviewCommentEvent,"That's a lie! You're deprecating it in 17.0! It's almost as bad as when people don't even put a deprecation version in the PR!
+
+![other](https://user-images.githubusercontent.com/7571158/197196247-32fb4206-ff6c-4b86-a333-3c99555a0412.png)
+"
+7571158,PullRequestReviewCommentEvent,"This misses the point entirely, and breaks the feature."
+7571158,PullRequestReviewCommentEvent,Can probably set `className` directly?
+7571158,PullRequestReviewCommentEvent,"> without flat=False the test would not be able to differentiate between ""a=b&a=f&c=d"" and ""a=b&c=d"".
+
+Sure but I don't think we care, I don't think multidicts are used anywhere in Odoo."
+7571158,PullRequestReviewCommentEvent,to check: is it possible to assert (= fail the test) in testDone?
+7571158,PullRequestReviewCommentEvent,the task specifically mentions preload as an issue (https://www.odoo.com/web#id=1913129&model=project.task&view_type=form)
+7571158,PullRequestReviewCommentEvent,"The `get` calls are useless here: if the key is missing then the next step will break *anyway* just with a more obscure error:
+```pycon
+>>> response.get('searchInformation').get('totalResults')
+Traceback (most recent call last):
+  File ""<stdin>"", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute 'get'
+>>> response['searchInformation']['totalResults']
+Traceback (most recent call last):
+  File ""<stdin>"", line 1, in <module>
+KeyError: 'searchInformation'
+```
+
+Just use `[]` if you don't actually want to handle the possibility of the key being missing somehow."
+7571158,PullRequestReviewCommentEvent,Use double quotes please.
+7571158,PullRequestReviewCommentEvent,"All these commenting blocks are useless, remove them."
+7571158,PullRequestReviewCommentEvent,"Or if you want semi-arbitrary text layout, use [line blocks](https://docutils.sourceforge.io/docs/user/rst/quickref.html#line-blocks)."
+7571158,PullRequestReviewCommentEvent,?
+7571158,PullRequestReviewCommentEvent,Why? That's the default.
+7571158,PullRequestReviewCommentEvent,"There's also an ""error en monto"" label above."
+7571158,PullRequestReviewCommentEvent,OK
+7571158,PullRequestReviewCommentEvent,Please use a dict literal.
+7571158,PullRequestReviewCommentEvent,fil-paragraph
+7571158,PullRequestReviewCommentEvent,useless change
+7571158,PullRequestReviewCommentEvent,"```suggestion
+            return !(w instanceof RamStorage || w.isDestroyed());
+```"
+76908410,PullRequestReviewCommentEvent,Let's take risk. The tracking protection filter is so outdated
+76908410,PullRequestReviewCommentEvent,EasyPrivacy beats it
+76908410,PullRequestReviewCommentEvent,What! It works on my end. What do you suggest?
+76908410,PullRequestReviewCommentEvent,You are a magician.
+76908410,PullRequestReviewCommentEvent,```dailyuploads.net``` has been removed from this rule.
+76908410,PullRequestReviewCommentEvent,Ok
+76908410,PullRequestReviewCommentEvent,Fixed.
+76908410,PullRequestReviewCommentEvent,"@Alex-302 Does this work?
+`ga.de#?#div.park-section:has( li.park-teaser-collection__list-item > aside[data-portal-id^=""mobilebanner_""])`"
+76908410,PullRequestReviewCommentEvent,To fix Anti-right click.
+76908410,PullRequestReviewCommentEvent,@zloyden Should I override the current rule or add it under HTML?
+76908410,PullRequestReviewCommentEvent,Ok.
+76908410,PullRequestReviewCommentEvent,"Yes, Thanks for keeping my suggestion."
+76908410,PullRequestReviewCommentEvent,I am not good in ads so yeah.
+76908410,PullRequestReviewCommentEvent,I experienced this before that's why put this rule `##.btnlink`
+76908410,PullRequestReviewCommentEvent,They change their code every day
+76908410,PullRequestReviewCommentEvent,hmm..sensitive too
+76908410,PullRequestReviewCommentEvent,This site it does the job so yeah
+76908410,PullRequestReviewCommentEvent,Oh yes yes. Wait
+76908410,PullRequestReviewCommentEvent,Fixed @Alex-302 
+76908410,PullRequestReviewCommentEvent,@Alex-302 ?
+76908410,PullRequestReviewCommentEvent,@zloyden Which rule?
+76908410,PullRequestReviewCommentEvent,https://github.com/AdguardTeam/AdguardFilters/pull/74120#issuecomment-774494139
+76908410,PullRequestReviewCommentEvent,"Nevermind you fix it. By the way, you missed this, 
+<details><summary>Screenshot:</summary>
+![image](https://user-images.githubusercontent.com/76908410/107516740-cadc8880-6be7-11eb-923b-350f33bf8bb9.png)
+</details><br/>"
+76908410,PullRequestReviewCommentEvent,@zloyden Wait for 10 secs
+76908410,PullRequestReviewCommentEvent,"Yeah, the live chats."
+76908410,PullRequestReviewCommentEvent,@Alex-302 
+76908410,PullRequestReviewCommentEvent,Blocks the link in the final page.
+76908410,PullRequestReviewCommentEvent,This is a Vietnamese Site.  
+76908410,PullRequestReviewCommentEvent,@zloyden 
+76908410,PullRequestReviewCommentEvent,"In this case, I prefer ext-css. "
+76908410,PullRequestReviewCommentEvent,Read @BlazDT Comments.
+76908410,PullRequestReviewCommentEvent,"@Alex-302 On my end, the padding changes. "
+76908410,PullRequestReviewCommentEvent,"Nope. It's just normal. @zloyden Can explain better. 
+![image](https://user-images.githubusercontent.com/76908410/113862842-82061200-97db-11eb-80c8-b21470cbfbba.png)
+"
+76908410,PullRequestReviewCommentEvent,"In different perspective, both are right."
+76908410,PullRequestReviewCommentEvent,@al
+76908410,PullRequestReviewCommentEvent,@Alex-302 
+28524381,PullRequestReviewCommentEvent,![Codacy](https://app.codacy.com/assets/images/favicon.png) Issue found: [Avoid unused imports such as 'android.net.Uri'](https://app.codacy.com/app/Nextcloud/android/pullRequest?prid=4512225)
+15369941,PullRequestReviewCommentEvent,"![MINOR](https://sonarsource.github.io/sonar-github/severity-minor.png 'Severity: MINOR') Remove this use of ""MolgenisDataException""; it is deprecated. [![rule](https://sonarsource.github.io/sonar-github/rule.png)](https://sonarcloud.io/coding_rules#rule_key=squid%3ACallToDeprecatedMethod)
+"
+44651202,PullRequestReviewCommentEvent,Golint comments: exported method Path.UnmarshalJSON should have comment or be unexported. [More info](https://golang.org/wiki/CodeReviewComments#doc-comments). <!-- golint -->
+44651202,PullRequestReviewCommentEvent,Cannot parse file: error unmarshaling JSON: while decoding JSON: json: cannot unmarshal string into Go value of type repoowners.FullConfig.
+44651202,PullRequestReviewCommentEvent,"```suggestion
+		return nil, fmt.Errorf(""load %s: %v"", groupName, err)
+```
+Golint errors: should replace errors.New(fmt.Sprintf(...)) with fmt.Errorf(...). <!-- golint -->"
+30189103,PullRequestReviewCommentEvent,Cannot parse file: open /tmp/git995384793/test/common/OWNERS: no such file or directory.
+30189103,PullRequestReviewCommentEvent,Cannot parse file: error unmarshaling JSON: while decoding JSON: json: cannot unmarshal string into Go value of type repoowners.FullConfig.
+30189103,PullRequestReviewCommentEvent,Golint naming: struct field UploadedCsvUri should be UploadedCsvURI. [More info](https://golang.org/wiki/CodeReviewComments#initialisms). <!-- golint -->
+30189103,PullRequestReviewCommentEvent,"```suggestion
+	_true  = true
+```
+Golint type-inference: should omit type bool from declaration of var _true; it will be inferred from the right-hand side. <!-- golint -->"
+30189103,PullRequestReviewCommentEvent,No approvers defined in this root directory OWNERS file.
+53356347,PullRequestReviewCommentEvent,Why is @self needed here?
+53356347,PullRequestReviewCommentEvent,"> @danieljurek What did we discover as part of the M1 work item?
+
+That work was around enabling ARM64 on Linux (in devcontainer scenarios) and we didn't dive too deep into Apple Silicon scenarios specifically. 
+
+In the case macOS the gh CLI publishes only one architecture: AMD64 (that is, Intel, not Apple Silicon). 
+
+Without directly verifying, my expectation is that the gh CLI relies on Rosetta 2 to handle execution or, if [installed via homebrew, builds the gh CLI from source](https://github.com/Homebrew/homebrew-core/blob/34b732b38991b8b2f26b592d87287ebc77937f19/Formula/gh.rb#L16-L18)"
+75433959,PullRequestReviewCommentEvent,Cannot parse file: error unmarshaling JSON: while decoding JSON: json: cannot unmarshal string into Go value of type repoowners.FullConfig.
+75433959,PullRequestReviewCommentEvent,Cannot parse file: open /var/tmp/gitrepo1596634359/ci-operator/step-registry/cloud-bulldozer/e2e-benchmarking/ingress-perf/OWNERS: too many levels of symbolic links.
+75433959,PullRequestReviewCommentEvent,Golint comments: exported method RunParams.GetParamValue should have comment or be unexported. [More info](https://golang.org/wiki/CodeReviewComments#doc-comments). <!-- golint -->
+86325950,PullRequestReviewCommentEvent,Not enough banana!
+56469371,PullRequestReviewCommentEvent,Cannot parse file: error unmarshaling JSON: while decoding JSON: json: cannot unmarshal string into Go value of type repoowners.FullConfig.
+71242396,PullRequestReviewCommentEvent,/lgtm
+16837285,PullRequestReviewCommentEvent,Lint issue: More than one statement on a single line
+16837285,PullRequestReviewCommentEvent,Lint issue: Statement seems to have no effect
+16837285,PullRequestReviewCommentEvent,"Lint issue: Exactly one space required after comma
+```
+    if hasattr(magic,'from_buffer'):
+                    ^
+```
+"
+36490558,PullRequestReviewCommentEvent,Hello @asmeurer I'm the bot in charge of auto ticking CF feedstocks! Nice to meet you!
+22429695,PullRequestReviewCommentEvent,The version of @types/node is updated here as well. Double-check for compatibility issues in this part of the codebase too.
+22429695,PullRequestReviewCommentEvent,"Deletion of the 'automerge' variable might prevent renovate from creating a PR and merging it automatically once tests pass. If you still want to automerge, it would be better to keep this variable."
+22429695,PullRequestReviewCommentEvent,The old Node.js version was v20.5.1.
+33906690,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 14: did not find expected key.
+20407524,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 3: did not find expected <document start>.
+20407524,PullRequestReviewCommentEvent,Golint comments: exported method TideQuery.ForRepo should have comment or be unexported. [More info](https://golang.org/wiki/CodeReviewComments#doc-comments). <!-- golint -->
+20407524,PullRequestReviewCommentEvent,exported type DraftReviewComment should have comment or be unexported
+20407524,PullRequestReviewCommentEvent,"should have a package comment, unless it's in another file for this package"
+77466803,PullRequestReviewCommentEvent,Not required: https://github.com/jtojnar/nixpkgs-hammering/blob/master/explanations/unnecessary-parallel-building.md
+40893967,PullRequestReviewCommentEvent,Cannot parse file: error converting YAML to JSON: yaml: line 33: did not find expected alphabetic or numeric character.
+23042052,PullRequestReviewCommentEvent,"If the class is on the default export then you can write `import TransitionGroup from ""...""`"
+23042052,PullRequestReviewCommentEvent,Correct; this section controls the initial list of input files and we will never consider them for any other behavior.
+7806257,PullRequestReviewCommentEvent,I think this requires a `N_` translation because of the scope of the code.  @mzazrivec ?
+7806257,PullRequestReviewCommentEvent,"Yes, please :smile:"
+7806257,PullRequestReviewCommentEvent,needs to cgi escape user/pass
+86326137,PullRequestReviewCommentEvent,Sounds good!
+76512065,PullRequestReviewCommentEvent,test
+47586280,PullRequestReviewCommentEvent,Golint comments: exported type Options should have comment or be unexported. [More info](https://golang.org/wiki/CodeReviewComments#doc-comments). <!-- golint -->
+74758351,PullRequestReviewCommentEvent,"Agreed, ""Unable to locate the game PGN"" might be a better alert message.
+Thank you 👍 🎉 "
+48982446,PullRequestReviewCommentEvent,"For `GracefulShutdown `, `Info` is enough here"
+48982446,PullRequestReviewCommentEvent,ditto
+48982446,PullRequestReviewCommentEvent,"@edisonxiang , Can you please push the deployment scenario's i have added in design doc. Each deployment scenario explained with edge node simulations."
+40373180,PullRequestReviewCommentEvent,"Component | Baseline Size | PR Size | Size Change | Bundle Size | Tolerance Level 
+ ------------ | ------------- | --------- | --------- | --------- | --------
+"
+40373180,PullRequestReviewCommentEvent,Nice change
+40373180,PullRequestReviewCommentEvent,"First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column"
+47433925,PullRequestReviewCommentEvent,(style)  do not add new typedefs
+47433925,PullRequestReviewCommentEvent,"```suggestion
+						     jobject clientObj, jlong objPtr,
+```"
+47433925,PullRequestReviewCommentEvent,(style)  Macros with complex values should be enclosed in parentheses
+47433925,PullRequestReviewCommentEvent,(style)  trailing whitespace
+47433925,PullRequestReviewCommentEvent,"(style)  please, no space before tabs"
+47433925,PullRequestReviewCommentEvent,(style)  adding a line without newline at end of file
+47433925,PullRequestReviewCommentEvent,(pylint-no-member) Instance of 'TestPool' has no 'hostlist_client' member
+47433925,PullRequestReviewCommentEvent,(pylint-attribute-defined-outside-init) Attribute 'threshold_percent' defined outside __init__
+47433925,PullRequestReviewCommentEvent,"(lint) Expected 'fi' matching previously mentioned 'if'. [SC1047]
+(lint) Unexpected keyword/token. Fix any mentioned problems and try again. [SC1072]"
+47433925,PullRequestReviewCommentEvent,(lint) The mentioned syntax error was in this while loop. [SC1009]
+34349395,PullRequestReviewCommentEvent,?
+46524234,PullRequestReviewCommentEvent,"whitespace:end of line
+"
+46524234,PullRequestReviewCommentEvent,"shellcheck:1: note: Not following: _mvn_unit_report.sh: openBinaryFile: does not exist (No such file or directory) [SC1091]
+"
+46524234,PullRequestReviewCommentEvent,"whitespace:tabs in line
+"
+46524234,PullRequestReviewCommentEvent,"shellcheck:38: note: Double quote to prevent globbing and word splitting. [SC2086]
+"
+46524234,PullRequestReviewCommentEvent,"jshint:24:W116:Expected '===' and instead saw '=='.
+jshint:40:W117:'_yarnUiUtilsDateUtils' is not defined.
+jshint:85:W067:Bad invocation.
+"
+46524234,PullRequestReviewCommentEvent,"jshint:21:W030:Expected an assignment or function call and instead saw an expression.
+jshint:22:W033:Missing semicolon.
+"
+541332,PullRequestReviewCommentEvent,"I'm under the impression the defaults affect the filter component as it is displayed elsewhere (eg on artist, artwork, gene pages, etc). I don't want to change the defaults... just the aggregations on `/collect`. Maybe i'm missing something!"
+5867665,PullRequestReviewCommentEvent,"I just tried to, but it claims it is all sync'ed. Can't it maybe update already open PRs? Do we have to close this and have it create a new one?"
+46030020,PullRequestReviewCommentEvent,icon found
+46030020,PullRequestReviewCommentEvent,ESLint disabled here
+46030020,PullRequestReviewCommentEvent,Sentry found
+39514782,PullRequestReviewCommentEvent,"![Code Smell](https://sonarsource.github.io/sonar-github/code_smell.png 'Code Smell') Code Smell: Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation. ([squid:S1186](https://sonarcloud.io/organizations/hibernate/rules#rule_key=squid%3AS1186))
+
+[See it in SonarCloud](https://sonarcloud.io/project/issues?id=org.hibernate.search%3Ahibernate-search-parent&pullRequest=1759&issues=AWZdNrnJrFHbA8-ERnyM&open=AWZdNrnJrFHbA8-ERnyM)
+
+[ISSUE_KEY]: AWZdNrnJrFHbA8-ERnyM"
+19239949,PullRequestReviewCommentEvent,Changing this file might cause some start up issues because of a failing checksum validation during liquibase execution.
+28579281,PullRequestReviewCommentEvent,Spurious edit.
+31079468,PullRequestReviewCommentEvent,"![INFO](https://sonarsource.github.io/sonar-github/severity-info.png 'Severity: INFO') Complete the task associated to this 'TODO' comment. [![rule](https://sonarsource.github.io/sonar-github/rule.png)](https://sonar.virtocommerce.com:443/coding_rules#rule_key=csharpsquid%3AS1135)
+"
+702790,PullRequestReviewCommentEvent,Fixed.  
+702790,PullRequestReviewCommentEvent,"1) The timing won't be accurate enough to matter, but I fixed the logic anyway.
+2) Good idea, implemented."
+702790,PullRequestReviewCommentEvent,"Indeed, good catch. In my mind I did it but apparently not.
+See PR #54116. "
+702790,PullRequestReviewCommentEvent,"Hmmm... this could be confusing indeed. I wish risc-v had an official pseudo-op for that.
+What about 'lx' and 'sx' instead since this is 'xlen' based? And  nqualified registers are identified with the letter x. Or any other suggestions?"
+702790,PullRequestReviewCommentEvent,No! Why would you do that?
+702790,PullRequestReviewCommentEvent,Fair enough.
+702790,PullRequestReviewCommentEvent,No. This is a sequence number. It is always increased or reset.
+702790,PullRequestReviewCommentEvent,Good idea indeed.
+67315154,PullRequestReviewCommentEvent,"This should do the trick
+```suggestion
+                # Sometimes user is an empty str, not None, therefore nothing is displayed in ServiceNow
+                user = entry.get('user', 'dbot') or 'dbot'
+```"
+83997633,PullRequestReviewCommentEvent,To create pull requests at https://github.com/microsoft/winget-pkgs.
+83997633,PullRequestReviewCommentEvent,"Oops, sorry for the mistake."
+83997633,PullRequestReviewCommentEvent,"```suggestion
+InstallModes:
+- interactive
+- silent
+UpgradeBehavior: install
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/runelite/launcher/releases/download/2.2.0/RuneLiteSetup.exe
+  InstallerSha256: CB5616F013B2C852A8EB6925DB178C958316828F9DD6D20B3F5ABEFBBA456D7F
+  Scope: user
+  InstallerSwitches:
+    Custom: /CURRENTUSER
+- Architecture: x64
+  InstallerUrl: https://github.com/runelite/launcher/releases/download/2.2.0/RuneLiteSetup.exe
+  InstallerSha256: CB5616F013B2C852A8EB6925DB178C958316828F9DD6D20B3F5ABEFBBA456D7F
+  Scope: machine
+  InstallerSwitches:
+    Custom: /ALLUSERS
+- Architecture: x86
+  InstallerUrl: https://github.com/runelite/launcher/releases/download/2.2.0/RuneLiteSetup32.exe
+  InstallerSha256: 0D5BCBEF45179B905789012D1EE58D267B41E46F121AF304CB6E072A74402D63
+  Scope: user
+  InstallerSwitches:
+    Custom: /CURRENTUSER
+- Architecture: x86
+  InstallerUrl: https://github.com/runelite/launcher/releases/download/2.2.0/RuneLiteSetup32.exe
+  InstallerSha256: 0D5BCBEF45179B905789012D1EE58D267B41E46F121AF304CB6E072A74402D63
+  Scope: machine
+  InstallerSwitches:
+    Custom: /ALLUSERS
+```"
+83997633,PullRequestReviewCommentEvent,"```suggestion
+InstallerType: inno
+Scope: machine
+```"
+83997633,PullRequestReviewCommentEvent,@russellbanks please add a contact method.
+83997633,PullRequestReviewCommentEvent,"from where this has been taken?
+![](https://user-images.githubusercontent.com/15158490/124385358-6c6a9080-dcd5-11eb-9681-87222611b8bd.png)
+"
+83997633,PullRequestReviewCommentEvent,"sorry, here is has been written ""Wondershare Software Co. Ltd."" [in pdfelement installation]
+![image](https://user-images.githubusercontent.com/83997633/124388524-fd0a9600-dd00-11eb-9146-f9e986a505eb.png)
+"
+83997633,PullRequestReviewCommentEvent,changes made...
+83997633,PullRequestReviewCommentEvent,"I think it will be 2021.2.EAP5, but if you think <SPACE> will be there, then do tell me.
+![image](https://user-images.githubusercontent.com/83997633/124785717-b5844400-df64-11eb-8db6-992a051b6a64.png)
+"
+83997633,PullRequestReviewCommentEvent,Please reply... 🙏🏻 
+83997633,PullRequestReviewCommentEvent,Okay
+83997633,PullRequestReviewCommentEvent,Doing the changes
+83997633,PullRequestReviewCommentEvent,"Do I have add separate Architecture for 64-bit machines?
+"
+83997633,PullRequestReviewCommentEvent,"Yes, I learnt this from my previous PRs"
+83997633,PullRequestReviewCommentEvent,How to find ProductCode?
+83997633,PullRequestReviewCommentEvent,You mean the issue is fixed now?
+83997633,PullRequestReviewCommentEvent,"```suggestion
+- issue-tracker
+- time-management
+- reports
+- knowledge-base
+- development
+```"
+83997633,PullRequestReviewCommentEvent,https://github.com/microsoft/winget-pkgs/blob/master/doc/manifest/schema/1.0.0/defaultLocale.md#optional-field-10
+83997633,PullRequestReviewCommentEvent,@fredemmott the above screenshot is from https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads?actionType=released#release.
+83997633,PullRequestReviewCommentEvent,"By the way, do you know PowerShell?"
+83997633,PullRequestReviewCommentEvent,"@zdtsw We can change the workflow to run on a `workflow_dispatch` event. The `workflow_dispatch` workflows are workflows which are triggered manually.
+
+The internal CI which publishes GitHub releases can trigger the WinGet workflow programmatically after all 4 binaries have been published (JDK/JRE x64/x86) and pass the GitHub release tag with it (see https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event to how to do it).
+
+References:
+2. Docs about `workflow_dispatch` event: https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+3. Updates to `workflow_dispatch`: https://github.blog/changelog/2022-06-10-github-actions-inputs-unified-across-manual-and-reusable-workflows/"
+83997633,PullRequestReviewCommentEvent,This was also suggested by IntelliJ IDEA.
+83997633,PullRequestReviewCommentEvent,Needs to be fixed
+83997633,PullRequestReviewCommentEvent,Why?
+83997633,PullRequestReviewCommentEvent,"So, can we detect them using `$script:dest`"
+83997633,PullRequestReviewCommentEvent,"The last line contains ""**It's** available""......  which is why manifest validation failed."
+83997633,PullRequestReviewCommentEvent,"```suggestion
+    steps:
+      - name: Release to WinGet
+        uses: vedantmgoyal2009/winget-releaser@v1
+        with:
+          identifier: ChilliBits.ComposeGenerator
+          version: ${{ github.ref_name }}
+          release-tag: ${{ github.ref_name }}
+          token: ${{ secrets.CR_PAT }}
+```"
+83997633,PullRequestReviewCommentEvent,Developer marked it as a non pre-release.
+83997633,PullRequestReviewCommentEvent,"BTW, isn't it NSIS (nullsoft)?
+
+https://searchfox.org/mozilla-central/source/browser/installer/windows/nsis"
+4725494,PullRequestReviewCommentEvent,"Whoopsie!
+What happened here?"
+4725494,PullRequestReviewCommentEvent,Is there any reason you're not using `(bool)` here?
+4725494,PullRequestReviewCommentEvent,Why did you do this?
+4725494,PullRequestReviewCommentEvent,"Ok, I wish I wouldn't have seen that. 🤢  But I guess the change is ok then, technically!"
+4725494,PullRequestReviewCommentEvent,Use german translations here.
+4725494,PullRequestReviewCommentEvent,Return types
+4725494,PullRequestReviewCommentEvent,Move this line into the constructor please.
+4725494,PullRequestReviewCommentEvent,"Shouldn't this be ""initHelpSupportElements""? Please remember to change the other occurences. "
+4725494,PullRequestReviewCommentEvent,Did you tested it with backend applications?
+4725494,PullRequestReviewCommentEvent,Did you let the php-cs-fixer run?
+4725494,PullRequestReviewCommentEvent,"```suggestion
+    public function getList(array $numbers, ShopContextInterface $context): array;
+```
+Please name it like in other StoreFrontServices"
+4725494,PullRequestReviewCommentEvent,"Any specific reason why you're using ""disabled"" here instead of [readOnly](https://docs.sencha.com/extjs/4.1.3/#!/api/Ext.form.field.Base-cfg-readOnly)?"
+4725494,PullRequestReviewCommentEvent,Typehint
+4725494,PullRequestReviewCommentEvent,Please use english language ;)
+4725494,PullRequestReviewCommentEvent,"This actually adds some performance issues. Adding more and more joins to an already (quite) huge and critical SQL statement might lead to an exponential loss of performance in bigger systems.
+
+Please try to find another spot to add those translations.
+
+Have a look [here](https://github.com/shopware/shopware/blob/5.6/engine/Shopware/Bundle/StoreFrontBundle/Service/Core/ListProductService.php#L124-L193) to see how we deal with that.
+Instead of adding dozens of joins, we read the IDs and their data of every entity first and then re-assign them afterwards in PHP."
+4725494,PullRequestReviewCommentEvent,@alpham8 Still on it?
+4725494,PullRequestReviewCommentEvent,This table does not exist yet - migration missing?
+4725494,PullRequestReviewCommentEvent,""" missing here"
+4725494,PullRequestReviewCommentEvent,You might want to use [mb_strlen](http://php.net/mb_strlen) here.
+4725494,PullRequestReviewCommentEvent,remove
+4725494,PullRequestReviewCommentEvent,Here is a debug :wink: 
+4725494,PullRequestReviewCommentEvent,Please add the missing fields in the [LegacyStructConverter](https://github.com/shopware/shopware/blob/00a29c08272972255dac9043dccee9b60cb13ec5/engine/Shopware/Components/Compatibility/LegacyStructConverter.php#L173)
+4725494,PullRequestReviewCommentEvent,Can you wrap the content with a p tag instead a <br>
+4725494,PullRequestReviewCommentEvent,Can you add a version and an alternative for this method?
+4725494,PullRequestReviewCommentEvent,return type
+4725494,PullRequestReviewCommentEvent,Can you move this out of this Pull Request? 
+4725494,PullRequestReviewCommentEvent,Why a left join?
+4725494,PullRequestReviewCommentEvent,Please add the type hints
+4725494,PullRequestReviewCommentEvent,Can you inline the variable $uniqueId and replace strtotime with 0
+4725494,PullRequestReviewCommentEvent,Don't use global Shopware() function 
+4725494,PullRequestReviewCommentEvent,This should be InvalidArgumentException
+4725494,PullRequestReviewCommentEvent,Here also InvalidArgumentException
+4725494,PullRequestReviewCommentEvent,Productnumber :see_no_evil: 
+4725494,PullRequestReviewCommentEvent,Productnumber
+4725494,PullRequestReviewCommentEvent,"Left join, please"
+4725494,PullRequestReviewCommentEvent,Can you change this to an innerJoin? This relation should ___always___ exist.
+4725494,PullRequestReviewCommentEvent,Short array syntax please :-)
+4725494,PullRequestReviewCommentEvent,Please create a **new** Test-Case instead of modifying one
+50673670,PullRequestReviewCommentEvent,"# Mend Code Security Check
+
+
+### New finding (1 of 3)
+> The Mend Code Security Check of your branch failed because of a Cross-Site Scripting finding in this line.
+
+<table role='table'><thead><tr><th>Severity</th><th>Vulnerability Type</th><th>CWE</th><th>File</th><th>Data Flows</th><th>Date</th></tr></thead><tbody><tr><td><a href='#'><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png?' width=19 height=20></a> High</td><td>Cross-Site Scripting</td><td>
+
+[CWE-79](https://cwe.mitre.org/data/definitions/79.html)
+
+</td><td>
+
+[AbstractServlet.java:98](https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L98)
+
+</td><td>12</td><td>2024-03-22 06:34pm</td></tr><tr><td colspan='6'><details><summary><a href='#'><img src='https://saas.mend.io/sast/favicon.png' width=15 height=15></a> Vulnerable Code</summary>
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L93-L98
+
+<details>
+<summary>12 Data Flow/s detected</summary></br>
+
+
+<details>
+<summary>View Data Flow 1</summary>
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/XSSServlet.java#L22
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/XSSServlet.java#L38
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/XSSServlet.java#L39
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/XSSServlet.java#L48
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L31
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L94
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L98
+
+</details>
+<details>
+<summary>View Data Flow 2</summary>
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedSizeUploadServlet.java#L70
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedSizeUploadServlet.java#L71
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/utils/MultiPartFileUtils.java#L56
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/utils/MultiPartFileUtils.java#L57
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/utils/MultiPartFileUtils.java#L59
+
+
+
+[View remaining steps](https://saas.whitesourcesoftware.com/app/orgs/nwe-scw-demo/applications/summary?project=cd2950f5-3551-4f2e-be76-04a9ce9cd1b1&findingSnapshotId=5c40ef2c-3895-418c-a20f-d5afe8b13e8c&filtered=yes)
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedSizeUploadServlet.java#L91
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedSizeUploadServlet.java#L98
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L31
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L94
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L98
+
+</details>
+<details>
+<summary>View Data Flow 3</summary>
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedExtensionUploadServlet.java#L69
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedExtensionUploadServlet.java#L76
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/utils/MultiPartFileUtils.java#L56
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/utils/MultiPartFileUtils.java#L57
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/utils/MultiPartFileUtils.java#L59
+
+
+
+[View remaining steps](https://saas.whitesourcesoftware.com/app/orgs/nwe-scw-demo/applications/summary?project=cd2950f5-3551-4f2e-be76-04a9ce9cd1b1&findingSnapshotId=5c40ef2c-3895-418c-a20f-d5afe8b13e8c&filtered=yes)
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedExtensionUploadServlet.java#L91
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/vulnerabilities/UnrestrictedExtensionUploadServlet.java#L98
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L31
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L94
+
+https://github.com/normanwenzel-scw-demo/easybuggy/blob/9e8470b6f1ed856b438c428b570718a3b188eee7/src/main/java/org/t246osslab/easybuggy/core/servlets/AbstractServlet.java#L98
+
+</details>
+
+
+[View more Data Flows](https://saas.whitesourcesoftware.com/app/orgs/nwe-scw-demo/applications/summary?project=cd2950f5-3551-4f2e-be76-04a9ce9cd1b1&findingSnapshotId=5c40ef2c-3895-418c-a20f-d5afe8b13e8c&filtered=yes)
+
+</details>
+</details>
+
+<details>
+
+<summary><a href='#'><img src='https://integration-api.securecodewarrior.com/explorer/favicon-32x32.png' width=15 height=15></a> Secure Code Warrior Training Material</summary>
+
+● Training
+
+&nbsp;&nbsp;&nbsp;▪ [Secure Code Warrior Cross-Site Scripting Training](https://portal.securecodewarrior.com/?utm_source=partner-integration:mend&partner_id=mend#/contextual-microlearning/web/xss/reflected/java/vanilla)
+
+● Videos
+
+&nbsp;&nbsp;&nbsp;▪ [Secure Code Warrior Cross-Site Scripting Video](https://media.securecodewarrior.com/v2/module_73_reflected_cross_site_scripting.mp4)
+
+</details>
+
+<!-- SAST-SUPPRESSION-START -->
+<details><summary>:black_flag: Suppress Finding</summary>
+
+- [ ] ... as False Alarm
+- [ ] ... as Acceptable Risk
+
+<!-- <SAST-SUPPRESSION>{""findingId"":""5c40ef2c-3895-418c-a20f-d5afe8b13e8c"",""scanId"":""0d88a8e1-4aeb-4041-a23c-b03222cc73d6""}</SAST-SUPPRESSION> --></details>
+
+<!-- SAST-SUPPRESSION-END -->
+</td></tr></tbody></table>
+
+"
+125029,PullRequestReviewCommentEvent,"
+<!--
+  0 failure: 
+  1 warning:  tests/Resources/t...
+  
+  
+  DangerID: danger-id-Danger;
+  File: tests/Resources/ti.ui.imageview.test.js;
+  Line: 7;
+-->
+
+- :warning: tests/Resources/ti.ui.imageview.test.js line 7 – 'OS_IOS' is defined but never used. (no-unused-vars)
+
+
+  "
+125029,PullRequestReviewCommentEvent,"I think you swapped what we wanted to keep versus cut in your PR. This PR is about implementing disableContextMenu, not disableTextSelection."
+38494943,PullRequestReviewCommentEvent,review thread test
+38494943,PullRequestReviewCommentEvent,you shouldn't write `foo` here
+38494943,PullRequestReviewCommentEvent,How original
+38494943,PullRequestReviewCommentEvent,Don't like this line too much either
+38494943,PullRequestReviewCommentEvent,much original
+7523732,PullRequestReviewCommentEvent,"probably should not to info, we are trying to reduce logging noise. see: https://github.com/hazelcast/hazelcast/pull/17243"
+13995816,PullRequestReviewCommentEvent,nil initialization is the default 
+13995816,PullRequestReviewCommentEvent,how do you specify the host and connection?
+13995816,PullRequestReviewCommentEvent,Put the latest version. it does not make sense to put outdated configuration in a new documentation.
+20280877,PullRequestReviewCommentEvent,"![CRITICAL](https://raw.githubusercontent.com/SonarCommunity/sonar-github/master/images/severity-critical.png) Javadoc comment at column 15 has parse error. Missed HTML close tag 'Entity'. Sometimes it means that close tag missed for one of previous tags. [![rule](https://raw.githubusercontent.com/SonarCommunity/sonar-github/master/images/rule.png)](https://sonar.projects.vaadin.com/coding_rules#rule_key=checkstyle%3Acom.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck)
+"
+30785616,PullRequestReviewCommentEvent,"I tried again, seems this is indeed not required.
+This change can be dropped."
+30785616,PullRequestReviewCommentEvent,"Already added mentioned changes.
+Make sure to pull the HEAD of my fork.
+"
+37936606,PullRequestReviewCommentEvent,"```suggestion
+You can play the game [here](https://billyyumyum2x2.github.io/github-games/)
+```
+
+Thanks for opening this pull request, @billyyumyum2x2.
+
+I've made a suggested change to this pull request because I think you should link your version of the game in your README file. I made this suggestion by creating a review comment that uses some :sparkle: special :sparkle: formatting.
+It looks like this:
+
+    ```suggestion
+    You can play the game [here](https://billyyumyum2x2.github.io/github-games/)
+    ```
+
+### :keyboard: Activity: Apply the suggestion
+
+1. Click **Apply suggestion**
+2. Enter a commit message
+3. Click **Commit changes**
+
+For more information about suggest changes, check out this [GitHub Help](https://help.github.com/articles/incorporating-feedback-in-your-pull-request) article.
+"
+37936606,PullRequestReviewCommentEvent,"```suggestion
+          command: bundle exec htmlproofer ./_site --check-html
+```
+"
+39046940,PullRequestReviewCommentEvent,"![Code Smell](https://sonarsource.github.io/sonar-github/code_smell.png 'Code Smell') Code Smell: Remove this unused method parameter ""tree"". ([squid:S1172](https://next.sonarqube.com/sonarqube/coding_rules#rule_key=squid%3AS1172))
+
+[See it in SonarQube](https://next.sonarqube.com/sonarqube/project/issues?id=org.sonarsource.java%3Ajava&pullRequest=2334&issues=AWdVg9BcQfbUmynOjriX&open=AWdVg9BcQfbUmynOjriX)
+
+[ISSUE_KEY]: AWdVg9BcQfbUmynOjriX"
+61464155,PullRequestReviewCommentEvent,![Codacy](https://app.codacy.com/assets/images/favicon.png) Issue found: [Position literals first in String comparisons](https://app.codacy.com/gh/cgeo/cgeo/pullRequest?prid=5330899)
+34711200,PullRequestReviewCommentEvent,"move it back here, install dashboard from the script and wait till its pods are ready and then print token !"
+34711200,PullRequestReviewCommentEvent,"use `kubectl apply -f tiller-rbac.yaml`
+"
+34711200,PullRequestReviewCommentEvent,This doesn't remove the deployment against tiller ? what we are removing in `line 25 - kubectl delete deploy tiller-deploy -n kube-system` 
+34711200,PullRequestReviewCommentEvent,Shouldn't appVersion be equal to Image tag? rather than having extra field
+38500045,PullRequestReviewCommentEvent,nothing... I guess
+38500045,PullRequestReviewCommentEvent,"yes, you can"
+38500045,PullRequestReviewCommentEvent,INDEED
+38500045,PullRequestReviewCommentEvent,:'(
+38500045,PullRequestReviewCommentEvent,How original
+38500045,PullRequestReviewCommentEvent,Don't like this line too much either
+38500045,PullRequestReviewCommentEvent,much originality
+38500045,PullRequestReviewCommentEvent,you shouldn't write `foo` here
+34669131,PullRequestReviewCommentEvent,"```suggestion
+- Rewrite Android code to Kotlin. ([#14474](https://github.com/expo/expo/pull/14474) by [@kkafar](https://github.com/kkafar))
+```
+"
+34669131,PullRequestReviewCommentEvent,"#### 🟠 SwiftLint: [Trailing Whitespace Violation](https://realm.github.io/SwiftLint/trailing_whitespace.html)
+Lines should not have trailing whitespace."
+63493438,PullRequestReviewCommentEvent,"A hard-coded credential was detected. It is not recommended  to store credentials in source-code, as this risks secrets being leaked and used by either an internal or external malicious adversary.  It is recommended to use environment variables to  securely provide credentials or retrieve credentials from  a secure vault or HSM (Hardware Security Module). ([Line 7](https://github.com/semgrep/test-end-to-end-app/blob/0a2200de070829e165039f3e98339bcae11c1592/test.py#L7))
+
+<sub>Created by <a href='https://semgrep.dev/r/python.boto3.security.hardcoded-token.hardcoded-token?utm_campaign=finding_notification&utm_medium=review_comment&utm_source=github&utm_content=rule'>hardcoded-token</a>.
+</sub>
+
+<!--
+
+🤫 WELCOME TO SECRET SEMGREP! 🤫
+This information is for debugging purposes and does not appear in rendered PR comments.
+
+Finding id: 7825668
+Syntactic id: d3521b6c9faeb692af1328d1e64487b7
+Start line: 7,1
+End line: 7,69
+Index: 0
+-->"
+49924207,PullRequestReviewCommentEvent,"Recommendation generated by Amazon CodeGuru Reviewer. Leave feedback on this recommendation by replying to the comment or by reacting to the comment using emoji.
+
+You are using the `get` method without a default argument to return the value of a key in a dictionary. We recommended that you use a default argument so that if the value for your key is not found, a default value is returned. If a default value is not provided and the key is not found, then `None` is returned.
+
+[Learn more](https://docs.python.org/3/library/stdtypes.html#dict.get)"
+58596630,PullRequestReviewCommentEvent,"Function `stratStats` refactored with the following changes:
+
+- Replace unused for index with underscore ([`for-index-underscore`](https://docs.sourcery.ai/Reference/Built-in-Rules/refactorings/for-index-underscore/))"
+55685376,PullRequestReviewCommentEvent,"
+
+### Micro-Learning Topic: Denial of service (Detected by phrase)
+
+#### Matched on ""denial of service""
+
+The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed. There are many ways to make a service unavailable for legitimate users by manipulating network packets, programming, logical, or resources handling vulnerabilities, among others. Source: https://www.owasp.org/index.php/Denial_of_Service
+
+#### [Try a challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-integration:2lambda123&integration_id=github-integration&tenant_id=95be10938f306c6a37f34668f8fbc173336eb0265a154f695ee543285e258403&partner_id=github-integration:2lambda123#/contextual-microlearning/web/dos)"
+13803237,PullRequestReviewCommentEvent,"## [🕵 fluentuiv8 Open the Visual Regressions report to inspect the 1045 screenshots]( https://staticpagerelease.z16.web.core.windows.net/azurestaticapps/$(VR_APP_NAME)/index.html?organization=uifabric&project=fabricpublic&prId=40&commitId=035a535cc07478fe08357fa952dc72d3e529f982&env=prod)
+
+✅ There was 1045 screenshots added, 0 screenshots removed, 0 screenshots unchanged, 0 screenshots with different dimensions and 0 screenshots with visible difference.
+
+
+  <details><summary><b>OverflowSet.Root - RTL.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|OverflowSet.Root - RTL.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>OverflowSet.Root.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|OverflowSet.Root.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>SearchBox.Full - RTL.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|SearchBox.Full - RTL.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>SearchBox.Full.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|SearchBox.Full.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>SearchBox.Root - RTL.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|SearchBox.Root - RTL.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>SearchBox.Root.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|SearchBox.Root.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>SearchBox.ShowIcon - RTL.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|SearchBox.ShowIcon - RTL.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>SearchBox.ShowIcon.default.chromium</b> 1 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|SearchBox.ShowIcon.default.chromium_1.png|0| Added|
+
+</details>
+
+
+  <details><summary><b>unknown</b> 1037 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|(Dev-Only) Suggestions.Test of closeButton with overflowing wide custom element.Hovering over a wide suggestion element.chromium.png|0| Added|
+|(Dev-Only) Suggestions.Test of closeButton with overflowing wide custom element.Hovering over the X button on a wide suggestion element.chromium.png|0| Added|
+|(Dev-Only) Suggestions.Test of closeButton with overflowing wide custom element.default.chromium.png|0| Added|
+|ActivityItem.Compact.default.chromium.png|0| Added|
+|ActivityItem.CompactPersonas.default.chromium.png|0| Added|
+|ActivityItem.Personas - RTL.default.chromium.png|0| Added|
+|ActivityItem.Personas.default.chromium.png|0| Added|
+|ActivityItem.Root - RTL.default.chromium.png|0| Added|
+|ActivityItem.Root.default.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.click.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.default.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.hover.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.itemLinkFocus.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.longTitleHover.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.overflowButtonFocus.chromium.png|0| Added|
+|Breadcrumb.Button - RTL.shortTitleHover.chromium.png|0| Added|
+|Breadcrumb.Button.click.chromium.png|0| Added|
+|Breadcrumb.Button.default.chromium.png|0| Added|
+|Breadcrumb.Button.hover.chromium.png|0| Added|
+|Breadcrumb.Button.itemLinkFocus.chromium.png|0| Added|
+|Breadcrumb.Button.longTitleHover.chromium.png|0| Added|
+|Breadcrumb.Button.overflowButtonFocus.chromium.png|0| Added|
+|Breadcrumb.Button.shortTitleHover.chromium.png|0| Added|
+|Breadcrumb.Hovering items.actionable hover.chromium.png|0| Added|
+|Breadcrumb.Hovering items.actionable overflow hover.chromium.png|0| Added|
+|Breadcrumb.Hovering items.chromium.png|0| Added|
+|Breadcrumb.Hovering items.non-actionable hover.chromium.png|0| Added|
+|Breadcrumb.Hovering items.non-actionable overflow hover.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.click.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.default.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.hover.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.itemLinkFocus.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.longTitleHover.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.overflowButtonFocus.chromium.png|0| Added|
+|Breadcrumb.Root - RTL.shortTitleHover.chromium.png|0| Added|
+|Breadcrumb.Root.click.chromium.png|0| Added|
+|Breadcrumb.Root.default.chromium.png|0| Added|
+|Breadcrumb.Root.hover.chromium.png|0| Added|
+|Breadcrumb.Root.itemLinkFocus.chromium.png|0| Added|
+|Breadcrumb.Root.longTitleHover.chromium.png|0| Added|
+|Breadcrumb.Root.overflowButtonFocus.chromium.png|0| Added|
+|Breadcrumb.Root.shortTitleHover.chromium.png|0| Added|
+|Button (compat).Checked.default.chromium.png|0| Added|
+|Button (compat).Checked.hover.chromium.png|0| Added|
+|Button (compat).Checked.pressed.chromium.png|0| Added|
+|Button (compat).Disabled.default.chromium.png|0| Added|
+|Button (compat).Disabled.hover.chromium.png|0| Added|
+|Button (compat).Disabled.pressed.chromium.png|0| Added|
+|Button (compat).Icon Only.default.chromium.png|0| Added|
+|Button (compat).Icon Only.hover.chromium.png|0| Added|
+|Button (compat).Icon Only.pressed.chromium.png|0| Added|
+|Button (compat).No Icon.default.chromium.png|0| Added|
+|Button (compat).No Icon.hover.chromium.png|0| Added|
+|Button (compat).No Icon.pressed.chromium.png|0| Added|
+|Button (compat).Primary Anchor.default.chromium.png|0| Added|
+|Button (compat).Primary Anchor.hover.chromium.png|0| Added|
+|Button (compat).Primary Anchor.pressed.chromium.png|0| Added|
+|Button (compat).Primary Checked.default.chromium.png|0| Added|
+|Button (compat).Primary Checked.hover.chromium.png|0| Added|
+|Button (compat).Primary Checked.pressed.chromium.png|0| Added|
+|Button (compat).Primary Disabled.default.chromium.png|0| Added|
+|Button (compat).Primary Disabled.hover.chromium.png|0| Added|
+|Button (compat).Primary Disabled.pressed.chromium.png|0| Added|
+|Button (compat).Primary.default.chromium.png|0| Added|
+|Button (compat).Primary.hover.chromium.png|0| Added|
+|Button (compat).Primary.pressed.chromium.png|0| Added|
+|Button (compat).Root - RTL.default.chromium.png|0| Added|
+|Button (compat).Root - RTL.hover.chromium.png|0| Added|
+|Button (compat).Root - RTL.pressed.chromium.png|0| Added|
+|Button (compat).Root.default.chromium.png|0| Added|
+|Button (compat).Root.hover.chromium.png|0| Added|
+|Button (compat).Root.pressed.chromium.png|0| Added|
+|Button Action (compat).Checked.default.chromium.png|0| Added|
+|Button Action (compat).Checked.hover.chromium.png|0| Added|
+|Button Action (compat).Checked.pressed.chromium.png|0| Added|
+|Button Action (compat).Disabled.default.chromium.png|0| Added|
+|Button Action (compat).Disabled.hover.chromium.png|0| Added|
+|Button Action (compat).Disabled.pressed.chromium.png|0| Added|
+|Button Action (compat).Icon Only.default.chromium.png|0| Added|
+|Button Action (compat).Icon Only.hover.chromium.png|0| Added|
+|Button Action (compat).Icon Only.pressed.chromium.png|0| Added|
+|Button Action (compat).No Icon.default.chromium.png|0| Added|
+|Button Action (compat).No Icon.hover.chromium.png|0| Added|
+|Button Action (compat).No Icon.pressed.chromium.png|0| Added|
+|Button Action (compat).Root - RTL.default.chromium.png|0| Added|
+|Button Action (compat).Root - RTL.hover.chromium.png|0| Added|
+|Button Action (compat).Root - RTL.pressed.chromium.png|0| Added|
+|Button Action (compat).Root.default.chromium.png|0| Added|
+|Button Action (compat).Root.hover.chromium.png|0| Added|
+|Button Action (compat).Root.pressed.chromium.png|0| Added|
+|Button Command (compat).Checked.default.chromium.png|0| Added|
+|Button Command (compat).Checked.hover.chromium.png|0| Added|
+|Button Command (compat).Checked.open.chromium.png|0| Added|
+|Button Command (compat).Checked.pressed.chromium.png|0| Added|
+|Button Command (compat).Disabled.default.chromium.png|0| Added|
+|Button Command (compat).Disabled.hover.chromium.png|0| Added|
+|Button Command (compat).Disabled.open.chromium.png|0| Added|
+|Button Command (compat).Disabled.pressed.chromium.png|0| Added|
+|Button Command (compat).Root - RTL.default.chromium.png|0| Added|
+|Button Command (compat).Root - RTL.hover.chromium.png|0| Added|
+|Button Command (compat).Root - RTL.open.chromium.png|0| Added|
+|Button Command (compat).Root - RTL.pressed.chromium.png|0| Added|
+|Button Command (compat).Root.default.chromium.png|0| Added|
+|Button Command (compat).Root.hover.chromium.png|0| Added|
+|Button Command (compat).Root.open.chromium.png|0| Added|
+|Button Command (compat).Root.pressed.chromium.png|0| Added|
+|Button Compound (compat).Checked.default.chromium.png|0| Added|
+|Button Compound (compat).Checked.hover.chromium.png|0| Added|
+|Button Compound (compat).Checked.pressed.chromium.png|0| Added|
+|Button Compound (compat).Disabled.default.chromium.png|0| Added|
+|Button Compound (compat).Disabled.hover.chromium.png|0| Added|
+|Button Compound (compat).Disabled.pressed.chromium.png|0| Added|
+|Button Compound (compat).No Icon.default.chromium.png|0| Added|
+|Button Compound (compat).No Icon.hover.chromium.png|0| Added|
+|Button Compound (compat).No Icon.pressed.chromium.png|0| Added|
+|Button Compound (compat).Primary Checked.default.chromium.png|0| Added|
+|Button Compound (compat).Primary Checked.hover.chromium.png|0| Added|
+|Button Compound (compat).Primary Checked.pressed.chromium.png|0| Added|
+|Button Compound (compat).Primary Disabled.default.chromium.png|0| Added|
+|Button Compound (compat).Primary Disabled.hover.chromium.png|0| Added|
+|Button Compound (compat).Primary Disabled.pressed.chromium.png|0| Added|
+|Button Compound (compat).Primary.default.chromium.png|0| Added|
+|Button Compound (compat).Primary.hover.chromium.png|0| Added|
+|Button Compound (compat).Primary.pressed.chromium.png|0| Added|
+|Button Compound (compat).Root - RTL.default.chromium.png|0| Added|
+|Button Compound (compat).Root - RTL.hover.chromium.png|0| Added|
+|Button Compound (compat).Root - RTL.pressed.chromium.png|0| Added|
+|Button Compound (compat).Root.default.chromium.png|0| Added|
+|Button Compound (compat).Root.hover.chromium.png|0| Added|
+|Button Compound (compat).Root.pressed.chromium.png|0| Added|
+|Button Special Scenarios (compat).no flex shrink.default.chromium.png|0| Added|
+|Button Special Scenarios (compat).primary with placeholder.default.chromium.png|0| Added|
+|Button Split (compat).Checked.default.chromium.png|0| Added|
+|Button Split (compat).Checked.hover main.chromium.png|0| Added|
+|Button Split (compat).Checked.hover split.chromium.png|0| Added|
+|Button Split (compat).Command Split.default.chromium.png|0| Added|
+|Button Split (compat).Command Split.hover main.chromium.png|0| Added|
+|Button Split (compat).Command Split.hover split.chromium.png|0| Added|
+|Button Split (compat).Default with Primary Action Disabled.default.chromium.png|0| Added|
+|Button Split (compat).Default with Primary Action Disabled.hover main.chromium.png|0| Added|
+|Button Split (compat).Default with Primary Action Disabled.hover split.chromium.png|0| Added|
+|Button Split (compat).Disabled.default.chromium.png|0| Added|
+|Button Split (compat).Disabled.hover main.chromium.png|0| Added|
+|Button Split (compat).Disabled.hover split.chromium.png|0| Added|
+|Button Split (compat).Primary Checked.default.chromium.png|0| Added|
+|Button Split (compat).Primary Checked.hover main.chromium.png|0| Added|
+|Button Split (compat).Primary Checked.hover split.chromium.png|0| Added|
+|Button Split (compat).Primary Disabled.default.chromium.png|0| Added|
+|Button Split (compat).Primary Disabled.hover main.chromium.png|0| Added|
+|Button Split (compat).Primary Disabled.hover split.chromium.png|0| Added|
+|Button Split (compat).Primary with Primary Action Disabled.default.chromium.png|0| Added|
+|Button Split (compat).Primary with Primary Action Disabled.hover main.chromium.png|0| Added|
+|Button Split (compat).Primary with Primary Action Disabled.hover split.chromium.png|0| Added|
+|Button Split (compat).Primary.default.chromium.png|0| Added|
+|Button Split (compat).Primary.hover main.chromium.png|0| Added|
+|Button Split (compat).Primary.hover split.chromium.png|0| Added|
+|Button Split (compat).Root - RTL.default.chromium.png|0| Added|
+|Button Split (compat).Root - RTL.hover main.chromium.png|0| Added|
+|Button Split (compat).Root - RTL.hover split.chromium.png|0| Added|
+|Button Split (compat).Root.default.chromium.png|0| Added|
+|Button Split (compat).Root.hover main.chromium.png|0| Added|
+|Button Split (compat).Root.hover split.chromium.png|0| Added|
+|Calendar - No Month Option.Show Month as Overlay and no Go To Today.default.chromium.png|0| Added|
+|Calendar - No Month Option.Show Month selection type.default.chromium.png|0| Added|
+|Calendar - No Month Option.Show Week selection type.default.chromium.png|0| Added|
+|Calendar - No Month Option.Show Work Week selection type.default.chromium.png|0| Added|
+|Calendar.Root - RTL.default.chromium.png|0| Added|
+|Calendar.Root.default.chromium.png|0| Added|
+|Callout.Beak 25.default.chromium.png|0| Added|
+|Callout.Bottom auto edge.default.chromium.png|0| Added|
+|Callout.Bottom center.default.chromium.png|0| Added|
+|Callout.Bottom left edge - RTL.default.chromium.png|0| Added|
+|Callout.Bottom left edge.default.chromium.png|0| Added|
+|Callout.Bottom right edge - RTL.default.chromium.png|0| Added|
+|Callout.Bottom right edge.default.chromium.png|0| Added|
+|Callout.Gap space 25.default.chromium.png|0| Added|
+|Callout.Left bottom edge.default.chromium.png|0| Added|
+|Callout.Left center.default.chromium.png|0| Added|
+|Callout.Left top edge.default.chromium.png|0| Added|
+|Callout.No beak.default.chromium.png|0| Added|
+|Callout.No callout width specified.default.chromium.png|0| Added|
+|Callout.Rendering callout attached to a rectangle.default.chromium.png|0| Added|
+|Callout.Right bottom edge.default.chromium.png|0| Added|
+|Callout.Right center.default.chromium.png|0| Added|
+|Callout.Right top edge.default.chromium.png|0| Added|
+|Callout.Root.default.chromium.png|0| Added|
+|Callout.Top auto edge.default.chromium.png|0| Added|
+|Callout.Top center.default.chromium.png|0| Added|
+|Callout.Top left edge.default.chromium.png|0| Added|
+|Callout.Top right edge.default.chromium.png|0| Added|
+|Checkbox Indeterminate.Controlled Indeterminate checkbox without onChange callback.clicked.chromium.png|0| Added|
+|Checkbox Indeterminate.Controlled Indeterminate checkbox without onChange callback.default.chromium.png|0| Added|
+|Checkbox Indeterminate.Controlled Indeterminate checkbox without onChange callback.hover.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled Indeterminate checkbox.clicked.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled Indeterminate checkbox.default.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled Indeterminate checkbox.hover.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled Indeterminate defaultChecked checkbox.clicked.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled Indeterminate defaultChecked checkbox.default.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled Indeterminate defaultChecked checkbox.hover.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled and Controlled Indeterminate checkbox.clicked.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled and Controlled Indeterminate checkbox.default.chromium.png|0| Added|
+|Checkbox Indeterminate.Uncontrolled and Controlled Indeterminate checkbox.hover.chromium.png|0| Added|
+|Checkbox.Checked disabled.default.chromium.png|0| Added|
+|Checkbox.Checked.default.chromium.png|0| Added|
+|Checkbox.Controlled Indeterminate disabled.default.chromium.png|0| Added|
+|Checkbox.Controlled Indeterminate.default.chromium.png|0| Added|
+|Checkbox.Custom render Checkbox.default.chromium.png|0| Added|
+|Checkbox.End - RTL.default.chromium.png|0| Added|
+|Checkbox.End.default.chromium.png|0| Added|
+|Checkbox.Multi-line Checkbox.default.chromium.png|0| Added|
+|Checkbox.Unchecked - RTL.default.chromium.png|0| Added|
+|Checkbox.Unchecked disabled.default.chromium.png|0| Added|
+|Checkbox.Unchecked.default.chromium.png|0| Added|
+|Checkbox.Uncontrolled Indeterminate disabled.default.chromium.png|0| Added|
+|Checkbox.Uncontrolled Indeterminate.default.chromium.png|0| Added|
+|ChoiceGroup.Required.default.chromium.png|0| Added|
+|ChoiceGroup.Required.hover selected.chromium.png|0| Added|
+|ChoiceGroup.Required.hover unselected.chromium.png|0| Added|
+|ChoiceGroup.Required.selected.chromium.png|0| Added|
+|ChoiceGroup.Root.default.chromium.png|0| Added|
+|ChoiceGroup.Root.hover selected.chromium.png|0| Added|
+|ChoiceGroup.Root.hover unselected.chromium.png|0| Added|
+|ChoiceGroup.Root.selected.chromium.png|0| Added|
+|ChoiceGroup.With default size images.default.chromium.png|0| Added|
+|ChoiceGroup.With default size images.hover selected.chromium.png|0| Added|
+|ChoiceGroup.With default size images.hover unselected.chromium.png|0| Added|
+|ChoiceGroup.With default size images.selected.chromium.png|0| Added|
+|ChoiceGroup.With icons - RTL.default.chromium.png|0| Added|
+|ChoiceGroup.With icons - RTL.hover selected.chromium.png|0| Added|
+|ChoiceGroup.With icons - RTL.hover unselected.chromium.png|0| Added|
+|ChoiceGroup.With icons - RTL.selected.chromium.png|0| Added|
+|ChoiceGroup.With icons.default.chromium.png|0| Added|
+|ChoiceGroup.With icons.hover selected.chromium.png|0| Added|
+|ChoiceGroup.With icons.hover unselected.chromium.png|0| Added|
+|ChoiceGroup.With icons.selected.chromium.png|0| Added|
+|ChoiceGroup.With large size images.default.chromium.png|0| Added|
+|ChoiceGroup.With large size images.hover selected.chromium.png|0| Added|
+|ChoiceGroup.With large size images.hover unselected.chromium.png|0| Added|
+|ChoiceGroup.With large size images.selected.chromium.png|0| Added|
+|Coachmark.Collapsed.default.chromium.png|0| Added|
+|Coachmark.Rendering Coachmark attached to a rectangle.default.chromium.png|0| Added|
+|ColorPicker.Blue.default.chromium.png|0| Added|
+|ColorPicker.Root - RTL.default.chromium.png|0| Added|
+|ColorPicker.Root.default.chromium.png|0| Added|
+|ComboBox.Disabled.click.chromium.png|0| Added|
+|ComboBox.Disabled.default.chromium.png|0| Added|
+|ComboBox.Disabled.hover.chromium.png|0| Added|
+|ComboBox.Error.click.chromium.png|0| Added|
+|ComboBox.Error.default.chromium.png|0| Added|
+|ComboBox.Error.hover.chromium.png|0| Added|
+|ComboBox.Placeholder.click.chromium.png|0| Added|
+|ComboBox.Placeholder.default.chromium.png|0| Added|
+|ComboBox.Placeholder.hover.chromium.png|0| Added|
+|ComboBox.Root - RTL.click.chromium.png|0| Added|
+|ComboBox.Root - RTL.default.chromium.png|0| Added|
+|ComboBox.Root - RTL.hover.chromium.png|0| Added|
+|ComboBox.Root.click.chromium.png|0| Added|
+|ComboBox.Root.default.chromium.png|0| Added|
+|ComboBox.Root.hover.chromium.png|0| Added|
+|ComboBox.Styled.click.chromium.png|0| Added|
+|ComboBox.Styled.default.chromium.png|0| Added|
+|ComboBox.Styled.hover.chromium.png|0| Added|
+|CommandBar.Icons only.click.chromium.png|0| Added|
+|CommandBar.Icons only.default.chromium.png|0| Added|
+|CommandBar.Icons only.hover.chromium.png|0| Added|
+|CommandBar.Root - RTL.click.chromium.png|0| Added|
+|CommandBar.Root - RTL.default.chromium.png|0| Added|
+|CommandBar.Root - RTL.hover.chromium.png|0| Added|
+|CommandBar.Root.click.chromium.png|0| Added|
+|CommandBar.Root.default.chromium.png|0| Added|
+|CommandBar.Root.hover.chromium.png|0| Added|
+|CommandBar.Text only.click.chromium.png|0| Added|
+|CommandBar.Text only.default.chromium.png|0| Added|
+|CommandBar.Text only.hover.chromium.png|0| Added|
+|ContextualMenu.Root.click.chromium.png|0| Added|
+|ContextualMenu.Root.default.chromium.png|0| Added|
+|ContextualMenu.Root.hover.chromium.png|0| Added|
+|ContextualMenu.With headers.click.chromium.png|0| Added|
+|ContextualMenu.With headers.default.chromium.png|0| Added|
+|ContextualMenu.With headers.hover.chromium.png|0| Added|
+|ContextualMenu.With icons.click.chromium.png|0| Added|
+|ContextualMenu.With icons.default.chromium.png|0| Added|
+|ContextualMenu.With icons.hover.chromium.png|0| Added|
+|ContextualMenu.With secondaryText - RTL.click.chromium.png|0| Added|
+|ContextualMenu.With secondaryText - RTL.default.chromium.png|0| Added|
+|ContextualMenu.With secondaryText - RTL.hover.chromium.png|0| Added|
+|ContextualMenu.With secondaryText.click.chromium.png|0| Added|
+|ContextualMenu.With secondaryText.default.chromium.png|0| Added|
+|ContextualMenu.With secondaryText.hover.chromium.png|0| Added|
+|ContextualMenu.With split button submenu.click.chromium.png|0| Added|
+|ContextualMenu.With split button submenu.default.chromium.png|0| Added|
+|ContextualMenu.With split button submenu.hover.chromium.png|0| Added|
+|ContextualMenu.With submenu - RTL.click.chromium.png|0| Added|
+|ContextualMenu.With submenu - RTL.default.chromium.png|0| Added|
+|ContextualMenu.With submenu - RTL.hover.chromium.png|0| Added|
+|ContextualMenu.With submenu.click.chromium.png|0| Added|
+|ContextualMenu.With submenu.default.chromium.png|0| Added|
+|ContextualMenu.With submenu.hover.chromium.png|0| Added|
+|ContextualMenu.With submenus with hrefs.chromium.png|0| Added|
+|ContextualMenu.With submenus with hrefs.item1 hovered.chromium.png|0| Added|
+|ContextualMenu.With submenus with hrefs.item2 hovered.chromium.png|0| Added|
+|ContextualMenu.With submenus with hrefs.menu opened.chromium.png|0| Added|
+|ContextualMenu.With submenus with hrefs.parent hovered.chromium.png|0| Added|
+|DatePicker - Disabled.With Label.click.chromium.png|0| Added|
+|DatePicker - Disabled.With Label.default.chromium.png|0| Added|
+|DatePicker - Disabled.With Label.hover datepicker.chromium.png|0| Added|
+|DatePicker - Disabled.Without Label.click.chromium.png|0| Added|
+|DatePicker - Disabled.Without Label.default.chromium.png|0| Added|
+|DatePicker - Disabled.Without Label.hover datepicker.chromium.png|0| Added|
+|DatePicker - Disabled.Without Value.click.chromium.png|0| Added|
+|DatePicker - Disabled.Without Value.default.chromium.png|0| Added|
+|DatePicker - Disabled.Without Value.hover datepicker.chromium.png|0| Added|
+|DatePicker - No Month Option.Show Month as Overlay and no Go To Today.click.chromium.png|0| Added|
+|DatePicker - No Month Option.Show Month as Overlay and no Go To Today.default.chromium.png|0| Added|
+|DatePicker - No Month Option.Show Month as Overlay and no Go To Today.hover datepicker.chromium.png|0| Added|
+|DatePicker - No Month Option.Show Month as Overlay and no Go To Today.hover day.chromium.png|0| Added|
+|DatePicker.Allow text input.click.chromium.png|0| Added|
+|DatePicker.Allow text input.default.chromium.png|0| Added|
+|DatePicker.Allow text input.hover datepicker.chromium.png|0| Added|
+|DatePicker.Allow text input.hover day.chromium.png|0| Added|
+|DatePicker.Allow text input.hover month.chromium.png|0| Added|
+|DatePicker.Placeholder.click.chromium.png|0| Added|
+|DatePicker.Placeholder.default.chromium.png|0| Added|
+|DatePicker.Placeholder.hover datepicker.chromium.png|0| Added|
+|DatePicker.Placeholder.hover day.chromium.png|0| Added|
+|DatePicker.Placeholder.hover month.chromium.png|0| Added|
+|DatePicker.Required.click.chromium.png|0| Added|
+|DatePicker.Required.default.chromium.png|0| Added|
+|DatePicker.Required.hover datepicker.chromium.png|0| Added|
+|DatePicker.Required.hover day.chromium.png|0| Added|
+|DatePicker.Required.hover month.chromium.png|0| Added|
+|DatePicker.Root - RTL.click.chromium.png|0| Added|
+|DatePicker.Root - RTL.default.chromium.png|0| Added|
+|DatePicker.Root - RTL.hover datepicker.chromium.png|0| Added|
+|DatePicker.Root - RTL.hover day.chromium.png|0| Added|
+|DatePicker.Root - RTL.hover month.chromium.png|0| Added|
+|DatePicker.Root.click.chromium.png|0| Added|
+|DatePicker.Root.default.chromium.png|0| Added|
+|DatePicker.Root.hover datepicker.chromium.png|0| Added|
+|DatePicker.Root.hover day.chromium.png|0| Added|
+|DatePicker.Root.hover month.chromium.png|0| Added|
+|DatePicker.Underlined and Required.click.chromium.png|0| Added|
+|DatePicker.Underlined and Required.default.chromium.png|0| Added|
+|DatePicker.Underlined and Required.hover datepicker.chromium.png|0| Added|
+|DatePicker.Underlined and Required.hover day.chromium.png|0| Added|
+|DatePicker.Underlined and Required.hover month.chromium.png|0| Added|
+|DatePicker.Underlined.click.chromium.png|0| Added|
+|DatePicker.Underlined.default.chromium.png|0| Added|
+|DatePicker.Underlined.hover datepicker.chromium.png|0| Added|
+|DatePicker.Underlined.hover day.chromium.png|0| Added|
+|DatePicker.Underlined.hover month.chromium.png|0| Added|
+|DetailsHeader.Root.borderWhileDragging.chromium.png|0| Added|
+|DetailsHeader.Root.default.chromium.png|0| Added|
+|DetailsHeader.Root.dropHint.chromium.png|0| Added|
+|DetailsHeader.Root.hoverDraggable.chromium.png|0| Added|
+|DetailsHeader.Root.hoverFrozenFirst.chromium.png|0| Added|
+|DetailsHeader.Root.hoverFrozenLast.chromium.png|0| Added|
+|DetailsList.Checkbox Visible Always - RTL.click.chromium.png|0| Added|
+|DetailsList.Checkbox Visible Always - RTL.default.chromium.png|0| Added|
+|DetailsList.Checkbox Visible Always - RTL.hover.chromium.png|0| Added|
+|DetailsList.Checkbox Visible Always.click.chromium.png|0| Added|
+|DetailsList.Checkbox Visible Always.default.chromium.png|0| Added|
+|DetailsList.Checkbox Visible Always.hover.chromium.png|0| Added|
+|DetailsList.Compact.click.chromium.png|0| Added|
+|DetailsList.Compact.default.chromium.png|0| Added|
+|DetailsList.Compact.hover.chromium.png|0| Added|
+|DetailsList.Grouped with Checkbox Hidden.click.chromium.png|0| Added|
+|DetailsList.Grouped with Checkbox Hidden.default.chromium.png|0| Added|
+|DetailsList.Grouped with Checkbox Hidden.hover.chromium.png|0| Added|
+|DetailsList.Grouped.click.chromium.png|0| Added|
+|DetailsList.Grouped.default.chromium.png|0| Added|
+|DetailsList.Grouped.hover.chromium.png|0| Added|
+|DetailsList.Root.click.chromium.png|0| Added|
+|DetailsList.Root.default.chromium.png|0| Added|
+|DetailsList.Root.hover.chromium.png|0| Added|
+|DetailsList.Single Selection Mode.click.chromium.png|0| Added|
+|DetailsList.Single Selection Mode.default.chromium.png|0| Added|
+|DetailsList.Single Selection Mode.hover.chromium.png|0| Added|
+|Dialog.Blocking.default.chromium.png|0| Added|
+|Dialog.Large header.default.chromium.png|0| Added|
+|Dialog.Root - RTL.default.chromium.png|0| Added|
+|Dialog.Root.default.chromium.png|0| Added|
+|Dialog.Wide Dialog.default.chromium.png|0| Added|
+|DocumentCard.Compact with preview image.default.chromium.png|0| Added|
+|DocumentCard.Compact with preview list.default.chromium.png|0| Added|
+|DocumentCard.Not truncated.default.chromium.png|0| Added|
+|DocumentCard.With secondary title style.default.chromium.png|0| Added|
+|Dropdown Disabled.Root.click.chromium.png|0| Added|
+|Dropdown Disabled.Root.default.chromium.png|0| Added|
+|Dropdown Disabled.Root.hover.chromium.png|0| Added|
+|Dropdown.Custom Dropdown - RTL.click.chromium.png|0| Added|
+|Dropdown.Custom Dropdown - RTL.default.chromium.png|0| Added|
+|Dropdown.Custom Dropdown - RTL.hover item.chromium.png|0| Added|
+|Dropdown.Custom Dropdown - RTL.hover.chromium.png|0| Added|
+|Dropdown.Custom Dropdown.click.chromium.png|0| Added|
+|Dropdown.Custom Dropdown.default.chromium.png|0| Added|
+|Dropdown.Custom Dropdown.hover item.chromium.png|0| Added|
+|Dropdown.Custom Dropdown.hover.chromium.png|0| Added|
+|Dropdown.Disabled option selected.click.chromium.png|0| Added|
+|Dropdown.Disabled option selected.default.chromium.png|0| Added|
+|Dropdown.Disabled option selected.hover item.chromium.png|0| Added|
+|Dropdown.Disabled option selected.hover.chromium.png|0| Added|
+|Dropdown.Multiselect - RTL.click.chromium.png|0| Added|
+|Dropdown.Multiselect - RTL.default.chromium.png|0| Added|
+|Dropdown.Multiselect - RTL.hover item.chromium.png|0| Added|
+|Dropdown.Multiselect - RTL.hover.chromium.png|0| Added|
+|Dropdown.Multiselect.click.chromium.png|0| Added|
+|Dropdown.Multiselect.default.chromium.png|0| Added|
+|Dropdown.Multiselect.hover item.chromium.png|0| Added|
+|Dropdown.Multiselect.hover.chromium.png|0| Added|
+|Dropdown.Required without label.click.chromium.png|0| Added|
+|Dropdown.Required without label.default.chromium.png|0| Added|
+|Dropdown.Required without label.hover item.chromium.png|0| Added|
+|Dropdown.Required without label.hover.chromium.png|0| Added|
+|Dropdown.Required.click.chromium.png|0| Added|
+|Dropdown.Required.default.chromium.png|0| Added|
+|Dropdown.Required.hover item.chromium.png|0| Added|
+|Dropdown.Required.hover.chromium.png|0| Added|
+|Dropdown.Root - RTL.click.chromium.png|0| Added|
+|Dropdown.Root - RTL.default.chromium.png|0| Added|
+|Dropdown.Root - RTL.hover item.chromium.png|0| Added|
+|Dropdown.Root - RTL.hover.chromium.png|0| Added|
+|Dropdown.Root.click.chromium.png|0| Added|
+|Dropdown.Root.default.chromium.png|0| Added|
+|Dropdown.Root.hover item.chromium.png|0| Added|
+|Dropdown.Root.hover.chromium.png|0| Added|
+|Facepile.Add face.default.chromium.png|0| Added|
+|Facepile.Custom button styles.default.chromium.png|0| Added|
+|Facepile.Extra extra small.default.chromium.png|0| Added|
+|Facepile.Overflow.default.chromium.png|0| Added|
+|Facepile.Root - RTL.default.chromium.png|0| Added|
+|Facepile.Root.default.chromium.png|0| Added|
+|FocusTrapZones.Dialog nested in Panel - RTL.click on panel close button.chromium.png|0| Added|
+|FocusTrapZones.Dialog nested in Panel - RTL.default.chromium.png|0| Added|
+|FocusTrapZones.Dialog nested in Panel.click on panel close button.chromium.png|0| Added|
+|FocusTrapZones.Dialog nested in Panel.default.chromium.png|0| Added|
+|FocusTrapZones.Panel on its own.click on panel close button.chromium.png|0| Added|
+|FocusTrapZones.Panel on its own.default.chromium.png|0| Added|
+|FolderCover.Large Default Cover.default.chromium.png|0| Added|
+|FolderCover.Large Media Cover.default.chromium.png|0| Added|
+|FolderCover.Shared Cover.default.chromium.png|0| Added|
+|FolderCover.Small Default Cover.default.chromium.png|0| Added|
+|FolderCover.Small Media Cover.default.chromium.png|0| Added|
+|Fonts.Arabic.default.chromium.png|0| Added|
+|Fonts.Armenian.default.chromium.png|0| Added|
+|Fonts.Chinese (Simplified).default.chromium.png|0| Added|
+|Fonts.Chinese (Traditional).default.chromium.png|0| Added|
+|Fonts.Cyrillic.default.chromium.png|0| Added|
+|Fonts.East European.default.chromium.png|0| Added|
+|Fonts.Georgian.default.chromium.png|0| Added|
+|Fonts.Greek.default.chromium.png|0| Added|
+|Fonts.Hebrew.default.chromium.png|0| Added|
+|Fonts.Hindi.default.chromium.png|0| Added|
+|Fonts.Japanese.default.chromium.png|0| Added|
+|Fonts.Korean.default.chromium.png|0| Added|
+|Fonts.Thai.default.chromium.png|0| Added|
+|Fonts.Vietnamese.default.chromium.png|0| Added|
+|Fonts.Weights.default.chromium.png|0| Added|
+|Fonts.West European.default.chromium.png|0| Added|
+|GroupedList.Root - RTL.click.chromium.png|0| Added|
+|GroupedList.Root - RTL.default.chromium.png|0| Added|
+|GroupedList.Root - RTL.hover.chromium.png|0| Added|
+|GroupedList.Root.click.chromium.png|0| Added|
+|GroupedList.Root.default.chromium.png|0| Added|
+|GroupedList.Root.hover.chromium.png|0| Added|
+|HoverCard.Root - RTL.default.chromium.png|0| Added|
+|HoverCard.Root - RTL.fully expanded with test content.chromium.png|0| Added|
+|HoverCard.Root.default.chromium.png|0| Added|
+|HoverCard.Root.fully expanded with test content.chromium.png|0| Added|
+|Icon.Color.default.chromium.png|0| Added|
+|Icon.Image.default.chromium.png|0| Added|
+|Icon.Root.default.chromium.png|0| Added|
+|IconButton Scenarios (compat).icon button with menu.hover icon.chromium.png|0| Added|
+|IconButton Scenarios (compat).icon button with menu.icon.chromium.png|0| Added|
+|IconButton Scenarios (compat).normal icon button.hover icon.chromium.png|0| Added|
+|IconButton Scenarios (compat).normal icon button.icon.chromium.png|0| Added|
+|Image.Fit- CenterContain, image larger.default.chromium.png|0| Added|
+|Image.Fit- CenterContain, image smaller.default.chromium.png|0| Added|
+|Image.Fit- CenterContain, image taller.default.chromium.png|0| Added|
+|Image.Fit- CenterContain, image wider.default.chromium.png|0| Added|
+|Image.Fit- center, image larger.default.chromium.png|0| Added|
+|Image.Fit- center, image smaller.default.chromium.png|0| Added|
+|Image.Fit- centerCover, image larger.default.chromium.png|0| Added|
+|Image.Fit- centerCover, image smaller.default.chromium.png|0| Added|
+|Image.Fit- centerCover, image taller.default.chromium.png|0| Added|
+|Image.Fit- centerCover, image wider.default.chromium.png|0| Added|
+|Image.Fit- contain, image taller.default.chromium.png|0| Added|
+|Image.Fit- contain, image wider.default.chromium.png|0| Added|
+|Image.Fit- cover, image taller.default.chromium.png|0| Added|
+|Image.Fit- cover, image wider.default.chromium.png|0| Added|
+|Image.Fit- none, image larger.default.chromium.png|0| Added|
+|Image.Fit- none, image smaller.default.chromium.png|0| Added|
+|Image.Maximize frame, landscape container.default.chromium.png|0| Added|
+|Image.Maximize frame, portrait container.default.chromium.png|0| Added|
+|Image.No fit, no w-h.default.chromium.png|0| Added|
+|Image.No fit, only height.default.chromium.png|0| Added|
+|Image.No fit, only width.default.chromium.png|0| Added|
+|Keytip.Disabled.default.chromium.png|0| Added|
+|Keytip.Offset.default.chromium.png|0| Added|
+|Keytip.Root.default.chromium.png|0| Added|
+|Label.Disabled.default.chromium.png|0| Added|
+|Label.Required.default.chromium.png|0| Added|
+|Label.Root - RTL.default.chromium.png|0| Added|
+|Label.Root.default.chromium.png|0| Added|
+|Layer.Root - RTL.default.chromium.png|0| Added|
+|Layer.Root.default.chromium.png|0| Added|
+|Link.Disabled.click.chromium.png|0| Added|
+|Link.Disabled.default.chromium.png|0| Added|
+|Link.Disabled.focus.chromium.png|0| Added|
+|Link.Disabled.hover.chromium.png|0| Added|
+|Link.No Href Disabled.click.chromium.png|0| Added|
+|Link.No Href Disabled.default.chromium.png|0| Added|
+|Link.No Href Disabled.focus.chromium.png|0| Added|
+|Link.No Href Disabled.hover.chromium.png|0| Added|
+|Link.No Href.click.chromium.png|0| Added|
+|Link.No Href.default.chromium.png|0| Added|
+|Link.No Href.focus.chromium.png|0| Added|
+|Link.No Href.hover.chromium.png|0| Added|
+|Link.Root - RTL.click.chromium.png|0| Added|
+|Link.Root - RTL.default.chromium.png|0| Added|
+|Link.Root - RTL.focus.chromium.png|0| Added|
+|Link.Root - RTL.hover.chromium.png|0| Added|
+|Link.Root.click.chromium.png|0| Added|
+|Link.Root.default.chromium.png|0| Added|
+|Link.Root.focus.chromium.png|0| Added|
+|Link.Root.hover.chromium.png|0| Added|
+|Link.Underlined Disabled.click.chromium.png|0| Added|
+|Link.Underlined Disabled.default.chromium.png|0| Added|
+|Link.Underlined Disabled.focus.chromium.png|0| Added|
+|Link.Underlined Disabled.hover.chromium.png|0| Added|
+|Link.Underlined.click.chromium.png|0| Added|
+|Link.Underlined.default.chromium.png|0| Added|
+|Link.Underlined.focus.chromium.png|0| Added|
+|Link.Underlined.hover.chromium.png|0| Added|
+|List.Root - RTL.default.chromium.png|0| Added|
+|List.Root.default.chromium.png|0| Added|
+|MediaTile.Media tile with nameplate hidden until hover.default.chromium.png|0| Added|
+|MediaTile.Media tile with nameplate hidden until hover.hover.chromium.png|0| Added|
+|MediaTile.Media tile with single activity line.default.chromium.png|0| Added|
+|MediaTile.Media tile with single activity line.hover.chromium.png|0| Added|
+|MediaTile.Media tile with two activity lines.default.chromium.png|0| Added|
+|MediaTile.Media tile with two activity lines.hover.chromium.png|0| Added|
+|MediaTile.Media tile with very long name and activity.default.chromium.png|0| Added|
+|MediaTile.Media tile with very long name and activity.hover.chromium.png|0| Added|
+|MessageBar.Blocked.default.chromium.png|0| Added|
+|MessageBar.Error.default.chromium.png|0| Added|
+|MessageBar.Root - RTL.default.chromium.png|0| Added|
+|MessageBar.Root actions - RTL.default.chromium.png|0| Added|
+|MessageBar.Root actions single line - RTL.default.chromium.png|0| Added|
+|MessageBar.Root actions single line.default.chromium.png|0| Added|
+|MessageBar.Root actions.default.chromium.png|0| Added|
+|MessageBar.Root dismiss - RTL.default.chromium.png|0| Added|
+|MessageBar.Root dismiss and action - RTL.default.chromium.png|0| Added|
+|MessageBar.Root dismiss and action single line - RTL.default.chromium.png|0| Added|
+|MessageBar.Root dismiss and action single line.default.chromium.png|0| Added|
+|MessageBar.Root dismiss and action.default.chromium.png|0| Added|
+|MessageBar.Root dismiss single line.default.chromium.png|0| Added|
+|MessageBar.Root dismiss.default.chromium.png|0| Added|
+|MessageBar.Root multiline - RTL.default.chromium.png|0| Added|
+|MessageBar.Root multiline.default.chromium.png|0| Added|
+|MessageBar.Root overflow - RTL.default.chromium.png|0| Added|
+|MessageBar.Root overflow.default.chromium.png|0| Added|
+|MessageBar.Root truncated - RTL.default.chromium.png|0| Added|
+|MessageBar.Root truncated.default.chromium.png|0| Added|
+|MessageBar.Root.default.chromium.png|0| Added|
+|MessageBar.Severe Warning.default.chromium.png|0| Added|
+|MessageBar.Success.default.chromium.png|0| Added|
+|MessageBar.Warning.default.chromium.png|0| Added|
+|Modal.Modeless.default.chromium.png|0| Added|
+|Modal.Root.default.chromium.png|0| Added|
+|Nav.Disabled - RTL.click.chromium.png|0| Added|
+|Nav.Disabled - RTL.default.chromium.png|0| Added|
+|Nav.Disabled - RTL.hover.chromium.png|0| Added|
+|Nav.Disabled.click.chromium.png|0| Added|
+|Nav.Disabled.default.chromium.png|0| Added|
+|Nav.Disabled.hover.chromium.png|0| Added|
+|Nav.Root - RTL.click.chromium.png|0| Added|
+|Nav.Root - RTL.default.chromium.png|0| Added|
+|Nav.Root - RTL.hover.chromium.png|0| Added|
+|Nav.Root.click.chromium.png|0| Added|
+|Nav.Root.default.chromium.png|0| Added|
+|Nav.Root.hover.chromium.png|0| Added|
+|OverflowSet variant.Vertical Direction.default.chromium.png|0| Added|
+|OverflowSet.Root - RTL.default.chromium.png|0| Added|
+|OverflowSet.Root.default.chromium.png|0| Added|
+|Overlay.Dark.default.chromium.png|0| Added|
+|Overlay.Root - RTL.default.chromium.png|0| Added|
+|Overlay.Root.default.chromium.png|0| Added|
+|Panel.Custom anchored left.default.chromium.png|0| Added|
+|Panel.Custom.default.chromium.png|0| Added|
+|Panel.Extra large right.default.chromium.png|0| Added|
+|Panel.Large fixed right.default.chromium.png|0| Added|
+|Panel.Large right.default.chromium.png|0| Added|
+|Panel.Medium right - RTL.default.chromium.png|0| Added|
+|Panel.Medium right.default.chromium.png|0| Added|
+|Panel.SearchBox and Right Panel - RTL.click.chromium.png|0| Added|
+|Panel.SearchBox and Right Panel - RTL.default.chromium.png|0| Added|
+|Panel.SearchBox and Right Panel.click.chromium.png|0| Added|
+|Panel.SearchBox and Right Panel.default.chromium.png|0| Added|
+|Panel.Small fixed right w- close button - RTL.default.chromium.png|0| Added|
+|Panel.Small fixed right w- close button.default.chromium.png|0| Added|
+|Panel.Small fluid right.default.chromium.png|0| Added|
+|Panel.Small left w- close button - RTL.default.chromium.png|0| Added|
+|Panel.Small left w- close button.default.chromium.png|0| Added|
+|Panel.With custom navigation.default.chromium.png|0| Added|
+|Panel.With footer at the bottom.default.chromium.png|0| Added|
+|Panel.With no header, close button.default.chromium.png|0| Added|
+|Panel.With no navigation.default.chromium.png|0| Added|
+|PeoplePicker.Compact disabled.chromium.png|0| Added|
+|PeoplePicker.Compact selected - RTL.default.chromium.png|0| Added|
+|PeoplePicker.Compact selected - RTL.suggestions.chromium.png|0| Added|
+|PeoplePicker.Compact selected.default.chromium.png|0| Added|
+|PeoplePicker.Compact selected.suggestions.chromium.png|0| Added|
+|PeoplePicker.Compact.default.chromium.png|0| Added|
+|PeoplePicker.Compact.suggestions.chromium.png|0| Added|
+|PeoplePicker.List disabled.chromium.png|0| Added|
+|PeoplePicker.List selected - RTL.default.chromium.png|0| Added|
+|PeoplePicker.List selected - RTL.suggestions.chromium.png|0| Added|
+|PeoplePicker.List selected.default.chromium.png|0| Added|
+|PeoplePicker.List selected.suggestions.chromium.png|0| Added|
+|PeoplePicker.List.default.chromium.png|0| Added|
+|PeoplePicker.List.suggestions.chromium.png|0| Added|
+|PeoplePicker.Normal Overflow selected - RTL.default.chromium.png|0| Added|
+|PeoplePicker.Normal Overflow selected - RTL.suggestions.chromium.png|0| Added|
+|PeoplePicker.Normal Overflow selected.default.chromium.png|0| Added|
+|PeoplePicker.Normal Overflow selected.suggestions.chromium.png|0| Added|
+|PeoplePicker.Normal disabled with placeholder.chromium.png|0| Added|
+|PeoplePicker.Normal disabled.chromium.png|0| Added|
+|PeoplePicker.Normal selected - RTL.default.chromium.png|0| Added|
+|PeoplePicker.Normal selected - RTL.suggestions.chromium.png|0| Added|
+|PeoplePicker.Normal selected.default.chromium.png|0| Added|
+|PeoplePicker.Normal selected.suggestions.chromium.png|0| Added|
+|PeoplePicker.Normal with placeholder.chromium.png|0| Added|
+|PeoplePicker.Normal with text.default.chromium.png|0| Added|
+|PeoplePicker.Normal with text.suggestion-  a .chromium.png|0| Added|
+|PeoplePicker.Normal.default.chromium.png|0| Added|
+|PeoplePicker.Normal.suggestions.chromium.png|0| Added|
+|Persona.Initials - RTL.default.chromium.png|0| Added|
+|Persona.Initials.default.chromium.png|0| Added|
+|Persona.Persona with children.default.chromium.png|0| Added|
+|Persona.default size, details hidden.default.chromium.png|0| Added|
+|Persona.default size, presences.default.chromium.png|0| Added|
+|Persona.size10 (tiny).default.chromium.png|0| Added|
+|Persona.size100 (extraLarge) - RTL.default.chromium.png|0| Added|
+|Persona.size100 (extraLarge).default.chromium.png|0| Added|
+|Persona.size120 - RTL.default.chromium.png|0| Added|
+|Persona.size120.default.chromium.png|0| Added|
+|Persona.size24 (extraExtraSmall).default.chromium.png|0| Added|
+|Persona.size28 (extraSmall).default.chromium.png|0| Added|
+|Persona.size32.default.chromium.png|0| Added|
+|Persona.size40 (small).default.chromium.png|0| Added|
+|Persona.size48 (regular).default.chromium.png|0| Added|
+|Persona.size72 (large).default.chromium.png|0| Added|
+|Pivot - Overflow.Root.Medium.chromium.png|0| Added|
+|Pivot - Overflow.Root.Narrow - Last tab selected.chromium.png|0| Added|
+|Pivot - Overflow.Root.Narrow - Overflow menu.chromium.png|0| Added|
+|Pivot - Overflow.Root.Wide.chromium.png|0| Added|
+|Pivot - Overflow.Root.chromium.png|0| Added|
+|Pivot - Overflow.Tabs - RTL.Medium.chromium.png|0| Added|
+|Pivot - Overflow.Tabs - RTL.Narrow - Last tab selected.chromium.png|0| Added|
+|Pivot - Overflow.Tabs - RTL.Narrow - Overflow menu.chromium.png|0| Added|
+|Pivot - Overflow.Tabs - RTL.Wide.chromium.png|0| Added|
+|Pivot - Overflow.Tabs - RTL.chromium.png|0| Added|
+|Pivot.Count and icon - RTL.click.chromium.png|0| Added|
+|Pivot.Count and icon - RTL.default.chromium.png|0| Added|
+|Pivot.Count and icon - RTL.hover-selected.chromium.png|0| Added|
+|Pivot.Count and icon - RTL.hover.chromium.png|0| Added|
+|Pivot.Count and icon.click.chromium.png|0| Added|
+|Pivot.Count and icon.default.chromium.png|0| Added|
+|Pivot.Count and icon.hover-selected.chromium.png|0| Added|
+|Pivot.Count and icon.hover.chromium.png|0| Added|
+|Pivot.Large.click.chromium.png|0| Added|
+|Pivot.Large.default.chromium.png|0| Added|
+|Pivot.Large.hover-selected.chromium.png|0| Added|
+|Pivot.Large.hover.chromium.png|0| Added|
+|Pivot.Root.click.chromium.png|0| Added|
+|Pivot.Root.default.chromium.png|0| Added|
+|Pivot.Root.hover-selected.chromium.png|0| Added|
+|Pivot.Root.hover.chromium.png|0| Added|
+|Pivot.Tabs - RTL.click.chromium.png|0| Added|
+|Pivot.Tabs - RTL.default.chromium.png|0| Added|
+|Pivot.Tabs - RTL.hover-selected.chromium.png|0| Added|
+|Pivot.Tabs - RTL.hover.chromium.png|0| Added|
+|Pivot.Tabs large.click.chromium.png|0| Added|
+|Pivot.Tabs large.default.chromium.png|0| Added|
+|Pivot.Tabs large.hover-selected.chromium.png|0| Added|
+|Pivot.Tabs large.hover.chromium.png|0| Added|
+|Pivot.Tabs.click.chromium.png|0| Added|
+|Pivot.Tabs.default.chromium.png|0| Added|
+|Pivot.Tabs.hover-selected.chromium.png|0| Added|
+|Pivot.Tabs.hover.chromium.png|0| Added|
+|ProgressIndicator.0%.default.chromium.png|0| Added|
+|ProgressIndicator.100%.default.chromium.png|0| Added|
+|ProgressIndicator.50% - RTL.default.chromium.png|0| Added|
+|ProgressIndicator.50%.default.chromium.png|0| Added|
+|Rating.Disabled.click.chromium.png|0| Added|
+|Rating.Disabled.default.chromium.png|0| Added|
+|Rating.Large.click.chromium.png|0| Added|
+|Rating.Large.default.chromium.png|0| Added|
+|Rating.Rated - RTL.click.chromium.png|0| Added|
+|Rating.Rated - RTL.default.chromium.png|0| Added|
+|Rating.Rated.click.chromium.png|0| Added|
+|Rating.Rated.default.chromium.png|0| Added|
+|Rating.Root.click.chromium.png|0| Added|
+|Rating.Root.default.chromium.png|0| Added|
+|ResizeGroup.Root - RTL.click overflow.chromium.png|0| Added|
+|ResizeGroup.Root - RTL.default.chromium.png|0| Added|
+|ResizeGroup.Root.click overflow.chromium.png|0| Added|
+|ResizeGroup.Root.default.chromium.png|0| Added|
+|ScrollablePane Details List.ScrollablePane Details List with sticky header & footer.default.chromium.png|0| Added|
+|ScrollablePane Details List.ScrollablePane Details List with sticky header & footer.scroll down by a small amount so that the first row is still visible.chromium.png|0| Added|
+|ScrollablePane Details List.ScrollablePane Details List with sticky header & footer.scroll down to the bottom.chromium.png|0| Added|
+|ScrollablePane Details List.ScrollablePane Details List with sticky header & footer.scroll up to the top.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.If groups are expanded, on horizontal scroll, over scroll should not happen for content container.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.If groups are expanded, when header becomes sticky, horizontal scrollbar should be visible.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.On expanding a group, horizontal scrollbar should be visible.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibility after scrolling down to the bottom with non-zero scrollLeft.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibility after scrolling down to the bottom.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibility after scrolling up to the top with non-zero scrollLeft.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibility after scrolling up to the top.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibility when header is sticky and scrollLeft is non-zero.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibility when header is sticky.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.Scrollbars visibilty after scrolling left.chromium.png|0| Added|
+|ScrollablePane Grouped Details List.ScrollablePane scrollbars visibility.default- scrollbars should be visible.chromium.png|0| Added|
+|ScrollablePane.Default ScrollablePane Example.default.chromium.png|0| Added|
+|ScrollablePane.Default ScrollablePane Example.scrolled.chromium.png|0| Added|
+|SearchBox.Full - RTL.default.chromium.png|0| Added|
+|SearchBox.Full.default.chromium.png|0| Added|
+|SearchBox.Root - RTL.default.chromium.png|0| Added|
+|SearchBox.Root.default.chromium.png|0| Added|
+|SearchBox.ShowIcon - RTL.default.chromium.png|0| Added|
+|SearchBox.ShowIcon.default.chromium.png|0| Added|
+|Separator.Horizontal End Aligned - RTL.default.chromium.png|0| Added|
+|Separator.Horizontal End Aligned.default.chromium.png|0| Added|
+|Separator.Horizontal Start Aligned - RTL.default.chromium.png|0| Added|
+|Separator.Horizontal Start Aligned.default.chromium.png|0| Added|
+|Separator.Root - RTL.default.chromium.png|0| Added|
+|Separator.Root.default.chromium.png|0| Added|
+|Separator.Vertical Center Aligned - RTL.default.chromium.png|0| Added|
+|Separator.Vertical Center Aligned.default.chromium.png|0| Added|
+|Separator.Vertical End Aligned - RTL.default.chromium.png|0| Added|
+|Separator.Vertical End Aligned.default.chromium.png|0| Added|
+|Separator.Vertical Start Aligned - RTL.default.chromium.png|0| Added|
+|Separator.Vertical Start Aligned.default.chromium.png|0| Added|
+|Shimmer.50% width.default.chromium.png|0| Added|
+|Shimmer.Basic.default.chromium.png|0| Added|
+|Shimmer.Circle Gap Line - RTL.default.chromium.png|0| Added|
+|Shimmer.Circle Gap Line.default.chromium.png|0| Added|
+|Shimmer.Custom elements on themed background.default.chromium.png|0| Added|
+|Shimmer.Custom elements.default.chromium.png|0| Added|
+|Shimmer.Data loaded.default.chromium.png|0| Added|
+|Shimmer.Data not loaded.default.chromium.png|0| Added|
+|Signals.Awaiting approval.default.chromium.png|0| Added|
+|Signals.Blocked.default.chromium.png|0| Added|
+|Signals.Comments (count).default.chromium.png|0| Added|
+|Signals.Comments.default.chromium.png|0| Added|
+|Signals.Emailed.default.chromium.png|0| Added|
+|Signals.Follow.default.chromium.png|0| Added|
+|Signals.Malware detected.default.chromium.png|0| Added|
+|Signals.Mention.default.chromium.png|0| Added|
+|Signals.Missing metadata.default.chromium.png|0| Added|
+|Signals.New (positioning).default.chromium.png|0| Added|
+|Signals.New.default.chromium.png|0| Added|
+|Signals.NotFollow.default.chromium.png|0| Added|
+|Signals.Read-only.default.chromium.png|0| Added|
+|Signals.Record.default.chromium.png|0| Added|
+|Signals.Shared.default.chromium.png|0| Added|
+|Signals.Someone checked out.default.chromium.png|0| Added|
+|Signals.Trending.default.chromium.png|0| Added|
+|Signals.Unseen edit.default.chromium.png|0| Added|
+|Signals.Unseen reply.default.chromium.png|0| Added|
+|Signals.Warning.default.chromium.png|0| Added|
+|Signals.You checked out.default.chromium.png|0| Added|
+|Slider.Disabled.default.chromium.png|0| Added|
+|Slider.Disabled.hover.chromium.png|0| Added|
+|Slider.EqualMinMax.default.chromium.png|0| Added|
+|Slider.EqualMinMax.hover.chromium.png|0| Added|
+|Slider.Max not multiple of step.default.chromium.png|0| Added|
+|Slider.Max not multiple of step.hover.chromium.png|0| Added|
+|Slider.Root - RTL.default.chromium.png|0| Added|
+|Slider.Root - RTL.hover.chromium.png|0| Added|
+|Slider.Root.default.chromium.png|0| Added|
+|Slider.Root.hover.chromium.png|0| Added|
+|Slider.Step less than 1.default.chromium.png|0| Added|
+|Slider.Step less than 1.hover.chromium.png|0| Added|
+|Slider.Vertical.default.chromium.png|0| Added|
+|Slider.Vertical.hover.chromium.png|0| Added|
+|SpinButton.Disabled.click input.chromium.png|0| Added|
+|SpinButton.Disabled.default.chromium.png|0| Added|
+|SpinButton.Disabled.hover arrow.chromium.png|0| Added|
+|SpinButton.Disabled.hover input.chromium.png|0| Added|
+|SpinButton.Disabled.mouseDown arrow.chromium.png|0| Added|
+|SpinButton.Label at end - RTL.default.chromium.png|0| Added|
+|SpinButton.Label at end with icon - RTL.default.chromium.png|0| Added|
+|SpinButton.Label at end with icon.default.chromium.png|0| Added|
+|SpinButton.Label at end.default.chromium.png|0| Added|
+|SpinButton.Label on bottom with icon.default.chromium.png|0| Added|
+|SpinButton.Label on bottom.default.chromium.png|0| Added|
+|SpinButton.Label on top with icon.default.chromium.png|0| Added|
+|SpinButton.Label on top.default.chromium.png|0| Added|
+|SpinButton.Root.click input.chromium.png|0| Added|
+|SpinButton.Root.default.chromium.png|0| Added|
+|SpinButton.Root.hover arrow.chromium.png|0| Added|
+|SpinButton.Root.hover input.chromium.png|0| Added|
+|SpinButton.Root.mouseDown arrow.chromium.png|0| Added|
+|SpinButton.With icon - RTL.click input.chromium.png|0| Added|
+|SpinButton.With icon - RTL.default.chromium.png|0| Added|
+|SpinButton.With icon - RTL.hover arrow.chromium.png|0| Added|
+|SpinButton.With icon - RTL.hover input.chromium.png|0| Added|
+|SpinButton.With icon - RTL.mouseDown arrow.chromium.png|0| Added|
+|SpinButton.With icon.click input.chromium.png|0| Added|
+|SpinButton.With icon.default.chromium.png|0| Added|
+|SpinButton.With icon.hover arrow.chromium.png|0| Added|
+|SpinButton.With icon.hover input.chromium.png|0| Added|
+|SpinButton.With icon.mouseDown arrow.chromium.png|0| Added|
+|Spinner.Extra small.default.chromium.png|0| Added|
+|Spinner.Label at top.default.chromium.png|0| Added|
+|Spinner.Label on the left.default.chromium.png|0| Added|
+|Spinner.Label on the right.default.chromium.png|0| Added|
+|Spinner.Label.default.chromium.png|0| Added|
+|Spinner.Large.default.chromium.png|0| Added|
+|Spinner.Medium.default.chromium.png|0| Added|
+|Spinner.Small.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Bottom-aligned.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Box shadow around items.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Default - RTL.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Default.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Gap - RTL.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Gap.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Growing items.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Horizontally centered.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Item alignments - RTL.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Item alignments.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Padding.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Reversed - RTL.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Reversed.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Right-aligned - RTL.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Right-aligned.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Shrinking items.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Space around.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Space between.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Space evenly.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Vertically centered.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Wrap - RTL.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Wrap with specified vertical gap.default.chromium.png|0| Added|
+|Stack.Horizontal Stack - Wrap.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Bottom-aligned.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Box shadow around items.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Default - RTL.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Default.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Gap.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Growing items.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Horizontally centered.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Item alignments - RTL.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Item alignments.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Padding.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Reversed - RTL.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Reversed.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Right-aligned - RTL.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Right-aligned.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Shrinking items.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Space around.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Space between.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Space evenly.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Vertically centered.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Wrap - RTL.default.chromium.png|0| Added|
+|Stack.Vertical Stack - Wrap.default.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.default.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.scroll back to the top when horizontal scroll is non-zero.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.scroll down by a small amount so that the first row is still visible and the header becomes sticky.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.scroll down to the bottom.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.scroll down when horizontal scroll is non-zero.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.scroll right.chromium.png|0| Added|
+|Sticky breadcrumb and sticky details list header.ScrollablePane Sticky Breadcrumb Details List.scroll up to the top.chromium.png|0| Added|
+|SwatchColorPicker.Circle - RTL.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Circle - RTL.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Circle - RTL.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Circle - RTL.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Circle - RTL.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Circle - RTL.default.chromium.png|0| Added|
+|SwatchColorPicker.Circle over 24px size.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Circle over 24px size.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Circle over 24px size.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Circle over 24px size.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Circle over 24px size.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Circle over 24px size.default.chromium.png|0| Added|
+|SwatchColorPicker.Circle.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Circle.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Circle.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Circle.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Circle.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Circle.default.chromium.png|0| Added|
+|SwatchColorPicker.Disabled.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Disabled.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Disabled.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Disabled.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Disabled.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Disabled.default.chromium.png|0| Added|
+|SwatchColorPicker.Multiple rows.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Multiple rows.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Multiple rows.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Multiple rows.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Multiple rows.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Multiple rows.default.chromium.png|0| Added|
+|SwatchColorPicker.Square over 24px size.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Square over 24px size.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Square over 24px size.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Square over 24px size.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Square over 24px size.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Square over 24px size.default.chromium.png|0| Added|
+|SwatchColorPicker.Square.Focused.chromium.png|0| Added|
+|SwatchColorPicker.Square.Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Square.Mousedown.chromium.png|0| Added|
+|SwatchColorPicker.Square.Selected and Focused.chromium.png|0| Added|
+|SwatchColorPicker.Square.Selected and Hovered.chromium.png|0| Added|
+|SwatchColorPicker.Square.default.chromium.png|0| Added|
+|TagItem.Selected - RTL.Tag Item Clear Button Hover.chromium.png|0| Added|
+|TagItem.Selected - RTL.Tag Item Clear Button Selected Hover.chromium.png|0| Added|
+|TagItem.Selected - RTL.Tag Item Hover.chromium.png|0| Added|
+|TagItem.Selected - RTL.Tag Item Select.chromium.png|0| Added|
+|TagItem.Selected - RTL.default.chromium.png|0| Added|
+|TagItem.Selected.Tag Item Clear Button Hover.chromium.png|0| Added|
+|TagItem.Selected.Tag Item Clear Button Selected Hover.chromium.png|0| Added|
+|TagItem.Selected.Tag Item Hover.chromium.png|0| Added|
+|TagItem.Selected.Tag Item Select.chromium.png|0| Added|
+|TagItem.Selected.default.chromium.png|0| Added|
+|TagPicker.Root.Open Suggestion Menu.chromium.png|0| Added|
+|TagPicker.Root.Suggestion Menu Item Hover.chromium.png|0| Added|
+|TagPicker.Root.default.chromium.png|0| Added|
+|TagPicker.Selected - RTL.Open Suggestion Menu.chromium.png|0| Added|
+|TagPicker.Selected - RTL.Suggestion Menu Item Hover.chromium.png|0| Added|
+|TagPicker.Selected - RTL.default.chromium.png|0| Added|
+|TagPicker.Selected.Open Suggestion Menu.chromium.png|0| Added|
+|TagPicker.Selected.Suggestion Menu Item Hover.chromium.png|0| Added|
+|TagPicker.Selected.default.chromium.png|0| Added|
+|TagPicker.TagPicker disabled.chromium.png|0| Added|
+|TagPicker.With long tag.default.chromium.png|0| Added|
+|TeachingBubble.SmallHeadline.default.chromium.png|0| Added|
+|TeachingBubble.WideIllustration - RTL.default.chromium.png|0| Added|
+|TeachingBubble.WideIllustration.default.chromium.png|0| Added|
+|Text.Block.default.chromium.png|0| Added|
+|Text.No wrap.default.chromium.png|0| Added|
+|Text.Root - RTL.default.chromium.png|0| Added|
+|Text.Root.default.chromium.png|0| Added|
+|Text.Wrap.default.chromium.png|0| Added|
+|TextField.Borderless.click.chromium.png|0| Added|
+|TextField.Borderless.default.chromium.png|0| Added|
+|TextField.Borderless.hover.chromium.png|0| Added|
+|TextField.Disabled.click.chromium.png|0| Added|
+|TextField.Disabled.default.chromium.png|0| Added|
+|TextField.Disabled.hover.chromium.png|0| Added|
+|TextField.Error - RTL.click.chromium.png|0| Added|
+|TextField.Error - RTL.default.chromium.png|0| Added|
+|TextField.Error - RTL.hover.chromium.png|0| Added|
+|TextField.Error.click.chromium.png|0| Added|
+|TextField.Error.default.chromium.png|0| Added|
+|TextField.Error.hover.chromium.png|0| Added|
+|TextField.Icon - RTL.click.chromium.png|0| Added|
+|TextField.Icon - RTL.default.chromium.png|0| Added|
+|TextField.Icon - RTL.hover.chromium.png|0| Added|
+|TextField.Icon.click.chromium.png|0| Added|
+|TextField.Icon.default.chromium.png|0| Added|
+|TextField.Icon.hover.chromium.png|0| Added|
+|TextField.Multiline - RTL.click.chromium.png|0| Added|
+|TextField.Multiline - RTL.default.chromium.png|0| Added|
+|TextField.Multiline - RTL.hover.chromium.png|0| Added|
+|TextField.Multiline nonresizable.click.chromium.png|0| Added|
+|TextField.Multiline nonresizable.default.chromium.png|0| Added|
+|TextField.Multiline nonresizable.hover.chromium.png|0| Added|
+|TextField.Multiline.click.chromium.png|0| Added|
+|TextField.Multiline.default.chromium.png|0| Added|
+|TextField.Multiline.hover.chromium.png|0| Added|
+|TextField.Placeholder - RTL.click.chromium.png|0| Added|
+|TextField.Placeholder - RTL.default.chromium.png|0| Added|
+|TextField.Placeholder - RTL.hover.chromium.png|0| Added|
+|TextField.Placeholder.click.chromium.png|0| Added|
+|TextField.Placeholder.default.chromium.png|0| Added|
+|TextField.Placeholder.hover.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled - RTL.click.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled - RTL.default.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled - RTL.hover.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled, and Prefix Style-Override - RTL.click.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled, and Prefix Style-Override - RTL.default.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled, and Prefix Style-Override - RTL.hover.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled, and Prefix Style-Override.click.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled, and Prefix Style-Override.default.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled, and Prefix Style-Override.hover.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled.click.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled.default.chromium.png|0| Added|
+|TextField.Prefix with Value, Disabled.hover.chromium.png|0| Added|
+|TextField.Required.click.chromium.png|0| Added|
+|TextField.Required.default.chromium.png|0| Added|
+|TextField.Required.hover.chromium.png|0| Added|
+|TextField.Root.click.chromium.png|0| Added|
+|TextField.Root.default.chromium.png|0| Added|
+|TextField.Root.hover.chromium.png|0| Added|
+|TextField.Suffix - RTL.click.chromium.png|0| Added|
+|TextField.Suffix - RTL.default.chromium.png|0| Added|
+|TextField.Suffix - RTL.hover.chromium.png|0| Added|
+|TextField.Suffix.click.chromium.png|0| Added|
+|TextField.Suffix.default.chromium.png|0| Added|
+|TextField.Suffix.hover.chromium.png|0| Added|
+|TextField.Underlined.click.chromium.png|0| Added|
+|TextField.Underlined.default.chromium.png|0| Added|
+|TextField.Underlined.hover.chromium.png|0| Added|
+|ThemeProvider with Customizer.Customizer wraps ThemeProvider.default.chromium.png|0| Added|
+|ThemeProvider with Customizer.ThemeProvider wraps Customizer.default.chromium.png|0| Added|
+|ThemeProvider with loadTheme.Use contextual theme over global theme if defined.default.chromium.png|0| Added|
+|ThemeProvider with loadTheme.Use contextual theme over global theme if defined.global theme changed.chromium.png|0| Added|
+|ThemeProvider with loadTheme.Use updated global theme.default.chromium.png|0| Added|
+|ThemeProvider with loadTheme.Use updated global theme.global theme changed.chromium.png|0| Added|
+|ThemeProvider.Customized styles.default.chromium.png|0| Added|
+|ThemeProvider.Customized theme - nested ThemeProvider.default.chromium.png|0| Added|
+|ThemeProvider.Customized theme.default.chromium.png|0| Added|
+|ThemeProvider.Default theme.default.chromium.png|0| Added|
+|Tile.Document tile with fit landscape image.default.chromium.png|0| Added|
+|Tile.Document tile with fit portrait image.default.chromium.png|0| Added|
+|Tile.Document tile with icon-sized image.default.chromium.png|0| Added|
+|Tile.Document tile with icon.default.chromium.png|0| Added|
+|Tile.Tile with no content and long text.default.chromium.png|0| Added|
+|Toggle.Checked - RTL.default.chromium.png|0| Added|
+|Toggle.Checked.default.chromium.png|0| Added|
+|Toggle.Disabled checked.default.chromium.png|0| Added|
+|Toggle.Disabled unchecked.default.chromium.png|0| Added|
+|Toggle.Unchecked - RTL.default.chromium.png|0| Added|
+|Toggle.Unchecked.default.chromium.png|0| Added|
+|Toggle.With inline label (JSX Element) and without onText and offText.default.chromium.png|0| Added|
+|Toggle.With inline label (JSX Element).default.chromium.png|0| Added|
+|Toggle.With inline label and without onText and offText.default.chromium.png|0| Added|
+|Toggle.With inline label disabled and without onText and offText.default.chromium.png|0| Added|
+|Toggle.With inline label disabled.default.chromium.png|0| Added|
+|Toggle.With inline label.default.chromium.png|0| Added|
+|Tooltip - Multiple.Two Tooltips.chromium.png|0| Added|
+|Tooltip - Multiple.Two Tooltips.hover inner.chromium.png|0| Added|
+|Tooltip - Multiple.Two Tooltips.hover outer.chromium.png|0| Added|
+|Tooltip.Default.chromium.png|0| Added|
+|Tooltip.Default.default.chromium.png|0| Added|
+
+</details>
+
+
+<div id=""vrtCommentfluentuiv8""/>"
+13803237,PullRequestReviewCommentEvent,"## [🕵 fluentuiv8 Open the Visual Regressions report to inspect the 2 screenshots]( https://staticpagerelease.z16.web.core.windows.net/azurestaticapps/vr-fluent/index.html?organization=uifabric&project=fabricpublic&prId=26340&commitId=722c6c013d88e2841c5f21004d731f19f0dbc2e4&env=prod)
+
+✅ There was 2 screenshots added, 0 screenshots removed, 1043 screenshots unchanged, 0 screenshots with different dimensions and 0 screenshots with visible difference.
+
+
+  <details><summary><b>unknown</b> 2 screenshots</summary>
+
+|Image Name|Diff(in Pixels)| Image Type
+|-|-|-|
+|Pivot - Overflow.Tabs - RTL.Narrow - Last tab selected.chromium.png|0| Added|
+|Pivot - Overflow.Tabs - RTL.Narrow - Overflow menu.chromium.png|0| Added|
+
+</details>
+
+
+<div id=""vrtCommentfluentuiv8""/>"
+39766333,PullRequestReviewCommentEvent,"[On the Git mailing list](https://lore.kernel.org/git/nycvar.QRO.7.76.6.2109131531210.55@tvgsbejvaqbjf.bet), Johannes Schindelin wrote ([reply to this](https://github.com/gitgitgadget/gitgitgadget/wiki/ReplyToThis)):
+
+``````````
+Hi Elijah,
+
+On Thu, 9 Sep 2021, Elijah Newren wrote:
+
+> On Wed, Sep 8, 2021 at 12:24 PM Johannes Schindelin via GitGitGadget
+> <gitgitgadget@gmail.com> wrote:
+> >
+> > From: Johannes Schindelin <johannes.schindelin@gmx.de>
+> >
+> > The idea of Scalar (https://github.com/microsoft/scalar), and before
+> > that, of VFS for Git, has always been to prove that Git _can_ scale, and
+> > to upstream whatever strategies have been demonstrated to help.
+> >
+> > With this patch, we start the journey from that C# project to move what
+> > is left to Git's own `contrib/` directory, reimplementing it in pure C,
+> > with the intention to facilitate integrating the functionality into core
+> > Git all while maintaining backwards-compatibility for existing Scalar
+> > users (which will be much easier when both live in the same worktree).
+> > It was always to plan to contribute all of the proven strategies back to
+> > core Git.
+>
+> s/always to plan/always the plan/
+>
+> > For example, while the virtual filesystem provided by VFS for Git helped
+> > the team developing the Windows operating system to move onto Git, while
+> > trying to upstream it we realized that it cannot be done: getting the
+> > virtual filesystem to work (which we only managed to implement fully on
+> > Windows, but not on, say, macOS or Linux), and the required server-side
+> > support for the GVFS protocol, made this not quite feasible.
+> >
+> > The Scalar project learned from that and tackled the problem with
+> > different tactics: instead of pretending to Git that the working
+> > directory is fully populated, it _specifically_ teaches Git about
+> > partial clone (which is based on VFS for Git's cache server), about
+> > sparse checkout (which VFS for Git tried to do transparently, in the
+> > file system layer), and regularly runs maintenance tasks to keep the
+> > repository in a healthy state.
+> >
+> > With partial clone, sparse checkout and `git maintenance` having been
+> > upstreamed, there is little left that `scalar.exe` does that which
+> > `git.exe` cannot do. One such thing is that `scalar clone <url>` will
+> > automatically set up a partial, sparse clone, and configure
+> > known-helpful settings from the start.
+>
+> s/does that which/does which/
+
+Thank you!
+
+I am holding off from sending a new iteration (with the suggested fixes)
+until tomorrow, waiting for more suggestions to trickle in.
+
+Thanks,
+Dscho
+
+>
+> > So let's bring this convenience into Git's tree.
+> >
+> > The idea here is that you can (optionally) build Scalar via
+> >
+> >         make -C contrib/scalar/Makefile
+> >
+> > This will build the `scalar` executable and put it into the
+> > contrib/scalar/ subdirectory.
+> >
+> > The slightly awkward addition of the `contrib/scalar/*` bits to the
+> > top-level `Makefile` are actually really required: we want to link to
+> > `libgit.a`, which means that we will need to use the very same `CFLAGS`
+> > and `LDFLAGS` as the rest of Git.
+> >
+> > An early development version of this patch tried to replicate all the
+> > conditional code in `contrib/scalar/Makefile` (e.g. `NO_POLL`) just like
+> > `contrib/svn-fe/Makefile` used to do before it was retired. It turned
+> > out to be quite the whack-a-mole game: the SHA-1-related flags, the
+> > flags enabling/disabling `compat/poll/`, `compat/regex/`,
+> > `compat/win32mmap.c` & friends depending on the current platform... To
+> > put it mildly: it was a major mess.
+> >
+> > Instead, this patch makes minimal changes to the top-level `Makefile` so
+> > that the bits in `contrib/scalar/` can be compiled and linked, and
+> > adds a `contrib/scalar/Makefile` that uses the top-level `Makefile` in a
+> > most minimal way to do the actual compiling.
+> >
+> > Note: With this commit, we only establish the infrastructure, no
+> > Scalar functionality is implemented yet; We will do that incrementally
+> > over the next few commits.
+> >
+> > Signed-off-by: Johannes Schindelin <johannes.schindelin@gmx.de>
+> > ---
+> >  Makefile                  |  8 ++++++++
+> >  contrib/scalar/.gitignore |  2 ++
+> >  contrib/scalar/Makefile   | 34 ++++++++++++++++++++++++++++++++++
+> >  contrib/scalar/scalar.c   | 36 ++++++++++++++++++++++++++++++++++++
+> >  4 files changed, 80 insertions(+)
+> >  create mode 100644 contrib/scalar/.gitignore
+> >  create mode 100644 contrib/scalar/Makefile
+> >  create mode 100644 contrib/scalar/scalar.c
+> >
+> > diff --git a/Makefile b/Makefile
+> > index c3565fc0f8f..2d5c822f7a8 100644
+> > --- a/Makefile
+> > +++ b/Makefile
+> > @@ -2447,6 +2447,10 @@ endif
+> >  .PHONY: objects
+> >  objects: $(OBJECTS)
+> >
+> > +SCALAR_SOURCES := contrib/scalar/scalar.c
+> > +SCALAR_OBJECTS := $(SCALAR_SOURCES:c=o)
+> > +OBJECTS += $(SCALAR_OBJECTS)
+> > +
+> >  dep_files := $(foreach f,$(OBJECTS),$(dir $f).depend/$(notdir $f).d)
+> >  dep_dirs := $(addsuffix .depend,$(sort $(dir $(OBJECTS))))
+> >
+> > @@ -2586,6 +2590,10 @@ $(REMOTE_CURL_PRIMARY): remote-curl.o http.o http-walker.o GIT-LDFLAGS $(GITLIBS
+> >         $(QUIET_LINK)$(CC) $(ALL_CFLAGS) -o $@ $(ALL_LDFLAGS) $(filter %.o,$^) \
+> >                 $(CURL_LIBCURL) $(EXPAT_LIBEXPAT) $(LIBS)
+> >
+> > +contrib/scalar/scalar$X: $(SCALAR_OBJECTS) GIT-LDFLAGS $(GITLIBS)
+> > +       $(QUIET_LINK)$(CC) $(ALL_CFLAGS) -o $@ $(ALL_LDFLAGS) \
+> > +               $(filter %.o,$^) $(LIBS)
+> > +
+> >  $(LIB_FILE): $(LIB_OBJS)
+> >         $(QUIET_AR)$(RM) $@ && $(AR) $(ARFLAGS) $@ $^
+> >
+> > diff --git a/contrib/scalar/.gitignore b/contrib/scalar/.gitignore
+> > new file mode 100644
+> > index 00000000000..ff3d47e84d0
+> > --- /dev/null
+> > +++ b/contrib/scalar/.gitignore
+> > @@ -0,0 +1,2 @@
+> > +/*.exe
+> > +/scalar
+> > diff --git a/contrib/scalar/Makefile b/contrib/scalar/Makefile
+> > new file mode 100644
+> > index 00000000000..40c03ad10e1
+> > --- /dev/null
+> > +++ b/contrib/scalar/Makefile
+> > @@ -0,0 +1,34 @@
+> > +QUIET_SUBDIR0  = +$(MAKE) -C # space to separate -C and subdir
+> > +QUIET_SUBDIR1  =
+> > +
+> > +ifneq ($(findstring s,$(MAKEFLAGS)),s)
+> > +ifndef V
+> > +       QUIET_SUBDIR0  = +@subdir=
+> > +       QUIET_SUBDIR1  = ;$(NO_SUBDIR) echo '   ' SUBDIR $$subdir; \
+> > +                        $(MAKE) $(PRINT_DIR) -C $$subdir
+> > +else
+> > +       export V
+> > +endif
+> > +endif
+> > +
+> > +all:
+> > +
+> > +include ../../config.mak.uname
+> > +-include ../../config.mak.autogen
+> > +-include ../../config.mak
+> > +
+> > +TARGETS = scalar$(X) scalar.o
+> > +GITLIBS = ../../common-main.o ../../libgit.a ../../xdiff/lib.a
+> > +
+> > +all: scalar$X
+> > +
+> > +$(GITLIBS):
+> > +       $(QUIET_SUBDIR0)../.. $(QUIET_SUBDIR1) $(subst ../../,,$@)
+> > +
+> > +$(TARGETS): $(GITLIBS) scalar.c
+> > +       $(QUIET_SUBDIR0)../.. $(QUIET_SUBDIR1) $(patsubst %,contrib/scalar/%,$@)
+> > +
+> > +clean:
+> > +       $(RM) $(TARGETS)
+> > +
+> > +.PHONY: all clean FORCE
+> > diff --git a/contrib/scalar/scalar.c b/contrib/scalar/scalar.c
+> > new file mode 100644
+> > index 00000000000..7cff29e0fcd
+> > --- /dev/null
+> > +++ b/contrib/scalar/scalar.c
+> > @@ -0,0 +1,36 @@
+> > +/*
+> > + * The Scalar command-line interface.
+> > + */
+> > +
+> > +#include ""cache.h""
+> > +#include ""gettext.h""
+> > +#include ""parse-options.h""
+> > +
+> > +static struct {
+> > +       const char *name;
+> > +       int (*fn)(int, const char **);
+> > +} builtins[] = {
+> > +       { NULL, NULL},
+> > +};
+> > +
+> > +int cmd_main(int argc, const char **argv)
+> > +{
+> > +       struct strbuf scalar_usage = STRBUF_INIT;
+> > +       int i;
+> > +
+> > +       if (argc > 1) {
+> > +               argv++;
+> > +               argc--;
+> > +
+> > +               for (i = 0; builtins[i].name; i++)
+> > +                       if (!strcmp(builtins[i].name, argv[0]))
+> > +                               return !!builtins[i].fn(argc, argv);
+> > +       }
+> > +
+> > +       strbuf_addstr(&scalar_usage,
+> > +                     N_(""scalar <command> [<options>]\n\nCommands:\n""));
+> > +       for (i = 0; builtins[i].name; i++)
+> > +               strbuf_addf(&scalar_usage, ""\t%s\n"", builtins[i].name);
+> > +
+> > +       usage(scalar_usage.buf);
+> > +}
+> > --
+> > gitgitgadget
+> >
+>
+``````````
+"
+39766333,PullRequestReviewCommentEvent,"[On the Git mailing list](https://lore.kernel.org/git/CAPig+cS=fhE1Dm1ESps8SME9XO2+RPJ7LGtquuZQ5XPFB1uk3Q@mail.gmail.com), Eric Sunshine wrote ([reply to this](https://github.com/gitgitgadget/gitgitgadget/wiki/ReplyToThis)):
+
+``````````
+On Mon, Sep 13, 2021 at 7:07 AM Matthias Aßhauer via GitGitGadget
+<gitgitgadget@gmail.com> wrote:
+> We already check that git.html exists, regardless of the page the user wants
+> to open. Additionally checking wether the requested page exists gives us a
+
+s/wether/whether/
+
+> smoother user experience when it doesn't.
+
+> When calling a git command and there is an error, most users reasonably expect
+> git to produce an error message on the standard error stream, but in this case
+> we pass the filepath to git web--browse wich passes it on to a browser (or a
+
+s/wich/which/
+
+> helper programm like xdg-open or start that should in turn open a browser)
+
+s/programm/program/
+
+> without any error and many GUI based browsers or helpers won't output such a
+> message onto the standard error stream.
+>
+> Especialy the helper programs tend to show the corresponding error message in
+
+s/Especialy/Especially/
+
+> a message box and wait for user input before exiting. This leaves users in
+> interactive console sessions without an error message in their console,
+> without a console prompt and without the help page they expected.
+>
+> The performance cost of the additional stat should be negliggible compared to
+
+s/negliggible/negligible/
+
+> the two or more pocesses that we spawn after the checks.
+
+s/pocesses/processes/
+
+> Signed-off-by: Matthias Aßhauer <mha1993@live.de>
+``````````
+"
